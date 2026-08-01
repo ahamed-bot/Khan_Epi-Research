@@ -1,0 +1,875 @@
+index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Khan Research Lab — Evolution and Function of Plant Chromatin Regulatory Networks in Genome Organisation and Adaptation.">
+
+    <title>Khan Research Lab | Plant Chromatin & Genome Organisation</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================================================
+     NAVIGATION
+========================================================= -->
+
+<header class="site-header">
+
+    <div class="nav-container">
+
+        <a href="#home" class="logo">
+            KHAN RESEARCH LAB
+        </a>
+
+        <nav class="navigation">
+            <a href="#research">Research</a>
+            <a href="#vision">Research Vision</a>
+            <a href="#objectives">Objectives</a>
+            <a href="#future">Future Lab</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================================
+     HOME / HERO
+========================================================= -->
+
+<main>
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <div class="hero-text">
+
+            <p class="eyebrow">
+                KHAN RESEARCH LAB
+            </p>
+
+            <h1>
+                Evolution, Chromatin,
+                <span>Genome Organisation</span>
+                &amp; Plant Adaptation
+            </h1>
+
+            <p class="hero-subtitle">
+                Evolution and Function of Plant Chromatin Regulatory
+                Networks in Genome Organisation and Adaptation
+            </p>
+
+            <p class="hero-description">
+                Understanding how chromatin regulatory networks evolve,
+                coordinate epigenetic machinery, organise genome
+                architecture, and contribute to developmental plasticity
+                and environmental adaptation in plants.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#research" class="button button-primary">
+                    Explore Research
+                </a>
+
+                <a href="#vision" class="button button-secondary">
+                    Research Vision
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-image-wrapper">
+
+            <img
+                src="images/khan-gfp-expression.png"
+                alt="GFP fluorescence expression in tobacco cells"
+                class="hero-image"
+            >
+
+            <p class="image-caption">
+                GFP fluorescence expression in tobacco cells.
+                Representative experimental microscopy image.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     INTRODUCTION
+========================================================= -->
+
+<section class="intro section-light">
+
+    <div class="content-container narrow">
+
+        <p class="section-label">
+            THE CENTRAL QUESTION
+        </p>
+
+        <h2>
+            How do plant chromatin regulatory systems evolve,
+            function and shape genome organisation?
+        </h2>
+
+        <p>
+            The Khan Research Lab explores the molecular and evolutionary
+            principles that connect chromatin regulation with genome
+            organisation and plant adaptation.
+        </p>
+
+        <p>
+            Our research brings together evolutionary biology,
+            molecular biology, genomics, epigenetics, chromatin biology
+            and computational approaches to understand how regulatory
+            systems emerge, diversify and function across plants.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     RESEARCH
+========================================================= -->
+
+<section id="research" class="research-section">
+
+    <div class="content-container">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                RESEARCH PROGRAMME
+            </p>
+
+            <h2>
+                From molecular mechanisms
+                to genome-scale organisation
+            </h2>
+
+            <p>
+                Our research programme connects evolutionary,
+                molecular and genomic perspectives on plant chromatin.
+            </p>
+
+        </div>
+
+
+        <div class="research-grid">
+
+
+            <!-- Research 01 -->
+
+            <article class="research-card">
+
+                <div class="research-number">
+                    01
+                </div>
+
+                <h3>
+                    Evolution of Chromatin Regulatory Systems
+                </h3>
+
+                <p>
+                    Investigating the emergence, diversification and
+                    evolutionary history of chromatin regulatory
+                    components across plant lineages.
+                </p>
+
+                <div class="research-tags">
+
+                    <span>PWO emergence</span>
+                    <span>PRC2 evolution</span>
+                    <span>EZ-SANT diversification</span>
+                    <span>Land-plant comparative biology</span>
+
+                </div>
+
+            </article>
+
+
+            <!-- Research 02 -->
+
+            <article class="research-card">
+
+                <div class="research-number">
+                    02
+                </div>
+
+                <h3>
+                    Molecular Recruitment &amp; Function
+                </h3>
+
+                <p>
+                    Understanding how chromatin regulators interact
+                    with proteins, DNA and chromatin to establish
+                    functional regulatory states.
+                </p>
+
+                <div class="research-tags">
+
+                    <span>Protein–protein interactions</span>
+                    <span>DNA targeting</span>
+                    <span>Chromatin targeting</span>
+                    <span>Modifier recruitment</span>
+
+                </div>
+
+            </article>
+
+
+            <!-- Research 03 -->
+
+            <article class="research-card">
+
+                <div class="research-number">
+                    03
+                </div>
+
+                <h3>
+                    Genome Organisation
+                </h3>
+
+                <p>
+                    Exploring how chromatin regulatory systems contribute
+                    to three-dimensional genome architecture and
+                    nuclear organisation.
+                </p>
+
+                <div class="research-tags">
+
+                    <span>3D genome</span>
+                    <span>Chromatin domains</span>
+                    <span>Nuclear compartments</span>
+                    <span>Polycomb organisation</span>
+
+                </div>
+
+            </article>
+
+
+            <!-- Research 04 -->
+
+            <article class="research-card">
+
+                <div class="research-number">
+                    04
+                </div>
+
+                <h3>
+                    Adaptation &amp; Developmental Plasticity
+                </h3>
+
+                <p>
+                    Investigating how chromatin states and genome
+                    organisation respond to environmental and
+                    developmental signals.
+                </p>
+
+                <div class="research-tags">
+
+                    <span>Stress responses</span>
+                    <span>Environmental responses</span>
+                    <span>Development</span>
+                    <span>Plasticity</span>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     RESEARCH VISION
+========================================================= -->
+
+<section id="vision" class="vision-section">
+
+    <div class="content-container">
+
+        <div class="section-heading centered">
+
+            <p class="section-label">
+                RESEARCH VISION
+            </p>
+
+            <h2>
+                A connected view of plant epigenome regulation
+            </h2>
+
+            <p>
+                The research programme is built around the idea that
+                evolutionary change, molecular regulation and genome
+                architecture are interconnected layers of plant biology.
+            </p>
+
+        </div>
+
+
+        <!-- CONCEPTUAL NETWORK -->
+
+        <div class="concept-map">
+
+
+            <!-- Connecting lines -->
+
+            <div class="connection connection-1"></div>
+            <div class="connection connection-2"></div>
+            <div class="connection connection-3"></div>
+            <div class="connection connection-4"></div>
+            <div class="connection connection-5"></div>
+
+
+            <!-- Centre -->
+
+            <div class="concept-centre">
+
+                <div class="centre-ring">
+
+                    <span>
+                        EPIGENOME
+                    </span>
+
+                    <strong>
+                        REGULATION
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- Evolution -->
+
+            <div class="concept-node node-evolution">
+
+                <span class="node-number">
+                    01
+                </span>
+
+                <h3>
+                    Evolution
+                </h3>
+
+                <p>
+                    Emergence and diversification
+                    of regulatory systems
+                </p>
+
+            </div>
+
+
+            <!-- Function -->
+
+            <div class="concept-node node-function">
+
+                <span class="node-number">
+                    02
+                </span>
+
+                <h3>
+                    Function
+                </h3>
+
+                <p>
+                    Molecular mechanisms
+                    and regulatory activity
+                </p>
+
+            </div>
+
+
+            <!-- Chromatin Regulatory Networks -->
+
+            <div class="concept-node node-chromatin">
+
+                <span class="node-number">
+                    03
+                </span>
+
+                <h3>
+                    Chromatin
+                    Regulatory Networks
+                </h3>
+
+                <p>
+                    Interactions between
+                    chromatin regulators
+                </p>
+
+            </div>
+
+
+            <!-- Genome Organisation -->
+
+            <div class="concept-node node-genome">
+
+                <span class="node-number">
+                    04
+                </span>
+
+                <h3>
+                    Genome
+                    Organisation
+                </h3>
+
+                <p>
+                    Chromatin architecture
+                    and nuclear organisation
+                </p>
+
+            </div>
+
+
+            <!-- Adaptation -->
+
+            <div class="concept-node node-adaptation">
+
+                <span class="node-number">
+                    05
+                </span>
+
+                <h3>
+                    Adaptation
+                </h3>
+
+                <p>
+                    Developmental plasticity
+                    and environmental response
+                </p>
+
+            </div>
+
+
+            <!-- Small Arabidopsis -->
+
+            <div class="arabidopsis">
+
+                <div class="plant-root"></div>
+
+                <div class="plant-stem"></div>
+
+                <div class="leaf leaf-1"></div>
+                <div class="leaf leaf-2"></div>
+                <div class="leaf leaf-3"></div>
+                <div class="leaf leaf-4"></div>
+                <div class="leaf leaf-5"></div>
+                <div class="leaf leaf-6"></div>
+
+                <span>
+                    Arabidopsis
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- Research pathway -->
+
+        <div class="research-pathway">
+
+            <div class="pathway-item">
+                <span>01</span>
+                <strong>Evolution</strong>
+            </div>
+
+            <div class="pathway-arrow">
+                →
+            </div>
+
+            <div class="pathway-item">
+                <span>02</span>
+                <strong>Regulatory Networks</strong>
+            </div>
+
+            <div class="pathway-arrow">
+                →
+            </div>
+
+            <div class="pathway-item">
+                <span>03</span>
+                <strong>Chromatin States</strong>
+            </div>
+
+            <div class="pathway-arrow">
+                →
+            </div>
+
+            <div class="pathway-item">
+                <span>04</span>
+                <strong>Genome Organisation</strong>
+            </div>
+
+            <div class="pathway-arrow">
+                →
+            </div>
+
+            <div class="pathway-item">
+                <span>05</span>
+                <strong>Gene Regulation</strong>
+            </div>
+
+            <div class="pathway-arrow">
+                →
+            </div>
+
+            <div class="pathway-item">
+                <span>06</span>
+                <strong>Adaptation</strong>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     OBJECTIVES
+========================================================= -->
+
+<section id="objectives" class="objectives-section">
+
+    <div class="content-container">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                RESEARCH OBJECTIVES
+            </p>
+
+            <h2>
+                Five interconnected objectives
+            </h2>
+
+        </div>
+
+
+        <div class="objective-list">
+
+
+            <div class="objective">
+
+                <div class="objective-number">
+                    01
+                </div>
+
+                <div>
+
+                    <h3>
+                        Reconstruct evolutionary histories
+                    </h3>
+
+                    <p>
+                        Determine how plant chromatin regulatory
+                        systems emerged, diversified and were
+                        remodelled throughout plant evolution.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="objective">
+
+                <div class="objective-number">
+                    02
+                </div>
+
+                <div>
+
+                    <h3>
+                        Define molecular mechanisms
+                    </h3>
+
+                    <p>
+                        Identify the molecular interactions that
+                        recruit and position chromatin regulatory
+                        machinery at specific genomic regions.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="objective">
+
+                <div class="objective-number">
+                    03
+                </div>
+
+                <div>
+
+                    <h3>
+                        Connect chromatin to genome architecture
+                    </h3>
+
+                    <p>
+                        Investigate how chromatin regulatory networks
+                        influence three-dimensional genome organisation
+                        and nuclear compartmentalisation.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="objective">
+
+                <div class="objective-number">
+                    04
+                </div>
+
+                <div>
+
+                    <h3>
+                        Understand developmental regulation
+                    </h3>
+
+                    <p>
+                        Determine how epigenome regulation contributes
+                        to developmental programmes and cellular
+                        identity.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="objective">
+
+                <div class="objective-number">
+                    05
+                </div>
+
+                <div>
+
+                    <h3>
+                        Explain adaptation
+                    </h3>
+
+                    <p>
+                        Establish how changes in chromatin state and
+                        genome organisation contribute to responses
+                        to environmental conditions.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FUTURE LAB
+========================================================= -->
+
+<section id="future" class="future-section">
+
+    <div class="content-container">
+
+        <div class="future-grid">
+
+            <div>
+
+                <p class="section-label">
+                    FUTURE LAB
+                </p>
+
+                <h2>
+                    Experimental biology meets
+                    genomics and evolutionary analysis
+                </h2>
+
+                <p>
+                    The future Khan Research Lab will integrate
+                    experimental and computational approaches to
+                    investigate plant chromatin regulation across
+                    molecular, genomic and evolutionary scales.
+                </p>
+
+            </div>
+
+
+            <div class="future-pillars">
+
+                <div class="future-pillar">
+                    <span>01</span>
+                    <h3>Experimental Biology</h3>
+                    <p>
+                        Molecular and cellular approaches to
+                        chromatin regulation.
+                    </p>
+                </div>
+
+                <div class="future-pillar">
+                    <span>02</span>
+                    <h3>Genomics</h3>
+                    <p>
+                        Genome-wide analysis of chromatin,
+                        regulatory states and genome organisation.
+                    </p>
+                </div>
+
+                <div class="future-pillar">
+                    <span>03</span>
+                    <h3>Computational Biology</h3>
+                    <p>
+                        Data-driven analysis of molecular,
+                        genomic and epigenomic datasets.
+                    </p>
+                </div>
+
+                <div class="future-pillar">
+                    <span>04</span>
+                    <h3>Evolutionary Analysis</h3>
+                    <p>
+                        Comparative approaches to uncover
+                        regulatory innovation across plant lineages.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     ABOUT
+========================================================= -->
+
+<section class="about-section">
+
+    <div class="content-container narrow">
+
+        <p class="section-label">
+            ABOUT THE LAB
+        </p>
+
+        <h2>
+            Building a research programme around
+            plant epigenome regulation
+        </h2>
+
+        <p>
+            The Khan Research Lab is envisioned as an interdisciplinary
+            research programme investigating the evolution, molecular
+            function and biological consequences of plant chromatin
+            regulatory networks.
+        </p>
+
+        <p>
+            By connecting evolutionary biology with molecular
+            mechanisms, genome organisation and plant adaptation,
+            the lab seeks to understand how regulatory systems are
+            built, modified and deployed across biological contexts.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CONTACT
+========================================================= -->
+
+<section id="contact" class="contact-section">
+
+    <div class="content-container">
+
+        <p class="section-label">
+            KHAN RESEARCH LAB
+        </p>
+
+        <h2>
+            Evolution. Chromatin. Genome Organisation. Adaptation.
+        </h2>
+
+        <p>
+            A developing research programme focused on understanding
+            how plant epigenome regulation connects molecular
+            mechanisms with genome organisation and adaptation.
+        </p>
+
+        <a href="mailto:your-email@example.com"
+           class="button button-primary">
+            Contact
+        </a>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+        <div>
+            <strong>
+                KHAN RESEARCH LAB
+            </strong>
+
+            <p>
+                Plant Chromatin • Genome Organisation • Adaptation
+            </p>
+        </div>
+
+        <div>
+            <p>
+                © 2026 Khan Research Lab
+            </p>
+        </div>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>
