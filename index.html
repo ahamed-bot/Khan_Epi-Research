@@ -1,1199 +1,774 @@
-/* =========================================================
-   KHAN RESEARCH LAB
-   Main stylesheet
-========================================================= */
+<!DOCTYPE html>
 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
 
-/* =========================================================
-   BASIC RESET
-========================================================= */
+```
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<meta
+    name="description"
+    content="Khan Research Lab — Evolution and Function of Plant Chromatin Regulatory Networks in Genome Organisation and Adaptation."
+>
 
-html {
-    scroll-behavior: smooth;
-}
+<title>Khan Research Lab | Plant Chromatin &amp; Genome Organisation</title>
 
-body {
-    font-family:
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Helvetica,
-        Arial,
-        sans-serif;
+<link rel="stylesheet" href="style.css">
+```
 
-    background: #f7f8f4;
-    color: #17221d;
+</head>
 
-    line-height: 1.6;
-}
+<body>
 
-img {
-    max-width: 100%;
-    display: block;
-}
+```
+<!-- =========================
+     HEADER / NAVIGATION
+========================== -->
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
+<header class="site-header">
+    <div class="nav-container">
 
-
-/* =========================================================
-   GLOBAL CONTAINERS
-========================================================= */
-
-.content-container {
-    width: min(1180px, 90%);
-    margin: 0 auto;
-}
-
-.content-container.narrow {
-    width: min(850px, 90%);
-}
-
-.section-heading {
-    max-width: 780px;
-    margin-bottom: 60px;
-}
-
-.section-heading.centered {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
-
-/* =========================================================
-   HEADER
-========================================================= */
-
-.site-header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-
-    background: rgba(247, 248, 244, 0.94);
-
-    border-bottom: 1px solid #dce1db;
-
-    backdrop-filter: blur(12px);
-}
-
-.nav-container {
-    width: min(1280px, 92%);
-    margin: auto;
-
-    min-height: 76px;
+        <a href="#home" class="logo">
+            KHAN RESEARCH LAB
+        </a>
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+        <nav class="navigation" aria-label="Main navigation">
+            <a href="#research">Research</a>
+            <a href="#vision">Research Vision</a>
+            <a href="#objectives">Objectives</a>
+            <a href="#future">Future Lab</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
-    gap: 30px;
-}
-
-.logo {
-    font-size: 15px;
-    font-weight: 800;
-    letter-spacing: 0.16em;
-
-    white-space: nowrap;
-}
-
-.navigation {
-    display: flex;
-    align-items: center;
-    gap: 28px;
-}
-
-.navigation a {
-    font-size: 13px;
-    font-weight: 600;
-    color: #53615a;
-
-    transition: color 0.25s ease;
-}
-
-.navigation a:hover {
-    color: #17221d;
-}
-
-
-/* =========================================================
-   TYPOGRAPHY
-========================================================= */
-
-h1,
-h2,
-h3 {
-    line-height: 1.12;
-    letter-spacing: -0.025em;
-}
-
-h1 {
-    font-size: clamp(42px, 6vw, 76px);
-    font-weight: 700;
-}
-
-h1 span {
-    display: block;
-}
-
-h2 {
-    font-size: clamp(34px, 4vw, 56px);
-    font-weight: 650;
-}
+    </div>
+</header>
 
-h3 {
-    font-size: 23px;
-    font-weight: 650;
-}
 
-p {
-    color: #5c6962;
-}
+<main>
 
-.section-label,
-.eyebrow {
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 0.2em;
-    color: #637b6d;
-}
+    <!-- =========================
+         HERO
+    ========================== -->
 
+    <section id="home" class="hero">
 
-/* =========================================================
-   BUTTONS
-========================================================= */
+        <div class="hero-content">
 
-.button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+            <div class="hero-text">
 
-    min-height: 50px;
-    padding: 0 24px;
+                <p class="eyebrow">
+                    KHAN RESEARCH LAB
+                </p>
 
-    border-radius: 4px;
+                <h1>
+                    Evolution, Chromatin,
+                    <span>Genome Organisation</span>
+                    &amp; Plant Adaptation
+                </h1>
 
-    font-size: 13px;
-    font-weight: 700;
+                <p class="hero-subtitle">
+                    Evolution and Function of Plant Chromatin Regulatory
+                    Networks in Genome Organisation and Adaptation
+                </p>
 
-    transition:
-        transform 0.25s ease,
-        background 0.25s ease;
-}
+                <p class="hero-description">
+                    Understanding how chromatin regulatory networks evolve,
+                    coordinate epigenetic machinery, organise genome
+                    architecture, and contribute to developmental plasticity
+                    and environmental adaptation in plants.
+                </p>
 
-.button:hover {
-    transform: translateY(-2px);
-}
+                <div class="hero-buttons">
+                    <a href="#research" class="button button-primary">
+                        Explore Research
+                    </a>
 
-.button-primary {
-    background: #1b3328;
-    color: white;
-}
+                    <a href="#vision" class="button button-secondary">
+                        Research Vision
+                    </a>
+                </div>
 
-.button-primary:hover {
-    background: #284a39;
-}
+            </div>
 
-.button-secondary {
-    border: 1px solid #b9c4bc;
-    color: #24342b;
-}
 
-.button-secondary:hover {
-    background: #e9ede8;
-}
+            <div class="hero-image-wrapper">
 
+                <img
+                    src="images/khan-gfp-expression.png"
+                    alt="GFP fluorescence expression in tobacco cells"
+                    class="hero-image"
+                >
 
-/* =========================================================
-   HERO
-========================================================= */
+                <p class="image-caption">
+                    GFP fluorescence expression in tobacco cells.
+                    Representative experimental microscopy image.
+                </p>
 
-.hero {
-    min-height: calc(100vh - 76px);
+            </div>
 
-    display: flex;
-    align-items: center;
+        </div>
 
-    padding: 90px 0 100px;
+    </section>
 
-    background:
-        radial-gradient(
-            circle at 80% 15%,
-            rgba(185, 204, 191, 0.25),
-            transparent 30%
-        );
-}
 
-.hero-content {
-    width: min(1280px, 92%);
-    margin: auto;
+    <!-- =========================
+         INTRODUCTION
+    ========================== -->
 
-    display: grid;
-    grid-template-columns: 1fr 0.9fr;
+    <section class="intro section-light">
 
-    align-items: center;
+        <div class="content-container narrow">
 
-    gap: 80px;
-}
+            <p class="section-label">
+                THE CENTRAL QUESTION
+            </p>
 
-.hero-text {
-    max-width: 720px;
-}
+            <h2>
+                How do plant chromatin regulatory systems evolve,
+                function and shape genome organisation?
+            </h2>
 
-.hero-text .eyebrow {
-    margin-bottom: 25px;
-}
+            <p>
+                The Khan Research Lab explores the molecular and
+                evolutionary principles that connect chromatin regulation
+                with genome organisation and plant adaptation.
+            </p>
 
-.hero-text h1 {
-    margin-bottom: 30px;
-}
+            <p>
+                Our research brings together evolutionary biology,
+                molecular biology, genomics, epigenetics, chromatin biology
+                and computational approaches to understand how regulatory
+                systems emerge, diversify and function across plants.
+            </p>
 
-.hero-subtitle {
-    max-width: 680px;
+        </div>
 
-    font-size: 21px;
-    font-weight: 500;
+    </section>
 
-    color: #30463a;
 
-    margin-bottom: 20px;
-}
+    <!-- =========================
+         RESEARCH
+    ========================== -->
 
-.hero-description {
-    max-width: 650px;
+    <section id="research" class="research-section">
 
-    font-size: 17px;
+        <div class="content-container">
 
-    margin-bottom: 35px;
-}
+            <div class="section-heading">
 
-.hero-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-}
+                <p class="section-label">
+                    RESEARCH PROGRAMME
+                </p>
 
-.hero-image-wrapper {
-    width: 100%;
-}
+                <h2>
+                    From molecular mechanisms
+                    to genome-scale organisation
+                </h2>
 
-.hero-image {
-    width: 100%;
-    aspect-ratio: 1 / 1;
+                <p>
+                    Our research programme connects evolutionary,
+                    molecular and genomic perspectives on plant chromatin.
+                </p>
 
-    object-fit: cover;
+            </div>
 
-    border-radius: 4px;
 
-    border: 1px solid #d3dbd4;
+            <div class="research-grid">
 
-    box-shadow:
-        0 30px 70px rgba(30, 45, 37, 0.13);
-}
+                <article class="research-card">
 
-.image-caption {
-    font-size: 11px;
-    line-height: 1.5;
+                    <div class="research-number">01</div>
 
-    margin-top: 12px;
+                    <h3>
+                        Evolution of Chromatin Regulatory Systems
+                    </h3>
 
-    color: #78837d;
-}
+                    <p>
+                        Investigating the emergence, diversification and
+                        evolutionary history of chromatin regulatory
+                        components across plant lineages.
+                    </p>
 
+                    <div class="research-tags">
+                        <span>PWO emergence</span>
+                        <span>PRC2 evolution</span>
+                        <span>EZ-SANT diversification</span>
+                        <span>Land-plant comparative biology</span>
+                    </div>
 
-/* =========================================================
-   INTRO
-========================================================= */
+                </article>
 
-.section-light {
-    background: #eef1ec;
-}
 
-.intro {
-    padding: 110px 0;
-}
+                <article class="research-card">
 
-.intro h2 {
-    margin: 20px 0 28px;
-}
+                    <div class="research-number">02</div>
 
-.intro p:not(.section-label) {
-    font-size: 18px;
-    margin-bottom: 18px;
-}
+                    <h3>
+                        Molecular Recruitment &amp; Function
+                    </h3>
 
+                    <p>
+                        Understanding how chromatin regulators interact
+                        with proteins, DNA and chromatin to establish
+                        functional regulatory states.
+                    </p>
 
-/* =========================================================
-   RESEARCH
-========================================================= */
+                    <div class="research-tags">
+                        <span>Protein–protein interactions</span>
+                        <span>DNA targeting</span>
+                        <span>Chromatin targeting</span>
+                        <span>Modifier recruitment</span>
+                    </div>
 
-.research-section {
-    padding: 120px 0;
+                </article>
 
-    background: #ffffff;
-}
 
-.section-heading h2 {
-    margin: 18px 0 20px;
-}
+                <article class="research-card">
 
-.section-heading > p:last-child {
-    font-size: 18px;
-}
+                    <div class="research-number">03</div>
 
-.research-grid {
-    display: grid;
+                    <h3>
+                        Genome Organisation
+                    </h3>
 
-    grid-template-columns:
-        repeat(2, 1fr);
+                    <p>
+                        Exploring how chromatin regulatory systems
+                        contribute to three-dimensional genome architecture
+                        and nuclear organisation.
+                    </p>
 
-    gap: 24px;
-}
+                    <div class="research-tags">
+                        <span>3D genome</span>
+                        <span>Chromatin domains</span>
+                        <span>Nuclear compartments</span>
+                        <span>Polycomb organisation</span>
+                    </div>
 
-.research-card {
-    padding: 42px;
+                </article>
 
-    min-height: 390px;
 
-    background: #f6f7f4;
+                <article class="research-card">
 
-    border: 1px solid #dce1dc;
+                    <div class="research-number">04</div>
 
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
-}
+                    <h3>
+                        Adaptation &amp; Developmental Plasticity
+                    </h3>
 
-.research-card:hover {
-    transform: translateY(-5px);
+                    <p>
+                        Investigating how chromatin states and genome
+                        organisation respond to environmental and
+                        developmental signals.
+                    </p>
 
-    box-shadow:
-        0 20px 45px rgba(30, 45, 37, 0.08);
-}
+                    <div class="research-tags">
+                        <span>Stress responses</span>
+                        <span>Environmental responses</span>
+                        <span>Development</span>
+                        <span>Plasticity</span>
+                    </div>
 
-.research-number {
-    font-size: 12px;
-    font-weight: 800;
+                </article>
 
-    letter-spacing: 0.15em;
+            </div>
 
-    color: #718a7b;
+        </div>
 
-    margin-bottom: 50px;
-}
+    </section>
 
-.research-card h3 {
-    max-width: 450px;
 
-    margin-bottom: 18px;
-}
+    <!-- =========================
+         RESEARCH VISION
+    ========================== -->
 
-.research-card p {
-    max-width: 500px;
+    <section id="vision" class="vision-section">
 
-    margin-bottom: 25px;
-}
+        <div class="content-container">
 
-.research-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-}
+            <div class="section-heading centered">
 
-.research-tags span {
-    padding: 6px 9px;
+                <p class="section-label">
+                    RESEARCH VISION
+                </p>
 
-    border: 1px solid #ccd5ce;
+                <h2>
+                    A connected view of plant epigenome regulation
+                </h2>
 
-    border-radius: 20px;
+                <p>
+                    The research programme is built around the idea that
+                    evolutionary change, molecular regulation and genome
+                    architecture are interconnected layers of plant biology.
+                </p>
 
-    font-size: 10px;
-    font-weight: 650;
+            </div>
 
-    color: #59685f;
-}
 
+            <div class="concept-map">
 
-/* =========================================================
-   VISION
-========================================================= */
+                <!-- Connection lines -->
+                <div class="connection connection-1"></div>
+                <div class="connection connection-2"></div>
+                <div class="connection connection-3"></div>
+                <div class="connection connection-4"></div>
+                <div class="connection connection-5"></div>
 
-.vision-section {
-    padding: 130px 0;
 
-    background: #17251e;
+                <!-- Centre -->
+                <div class="concept-centre">
 
-    color: white;
-}
+                    <div class="centre-ring">
+                        <span>EPIGENOME</span>
+                        <strong>REGULATION</strong>
+                    </div>
 
-.vision-section p {
-    color: #b8c3bd;
-}
+                </div>
 
-.vision-section .section-label {
-    color: #a4baa9;
-}
 
-.vision-section h2 {
-    color: white;
-}
+                <!-- Evolution -->
+                <div class="concept-node node-evolution">
 
+                    <span class="node-number">01</span>
 
-/* =========================================================
-   CONCEPT MAP
-========================================================= */
+                    <h3>Evolution</h3>
 
-.concept-map {
-    position: relative;
+                    <p>
+                        Emergence and diversification
+                        of regulatory systems
+                    </p>
 
-    width: min(950px, 100%);
-    height: 750px;
+                </div>
 
-    margin: 80px auto 100px;
-}
 
+                <!-- Function -->
+                <div class="concept-node node-function">
 
-/* Centre */
+                    <span class="node-number">02</span>
 
-.concept-centre {
-    position: absolute;
+                    <h3>Function</h3>
 
-    left: 50%;
-    top: 50%;
+                    <p>
+                        Molecular mechanisms
+                        and regulatory activity
+                    </p>
 
-    transform: translate(-50%, -50%);
+                </div>
 
-    width: 210px;
-    height: 210px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+                <!-- Chromatin -->
+                <div class="concept-node node-chromatin">
 
-    border-radius: 50%;
+                    <span class="node-number">03</span>
 
-    background: #dce8de;
+                    <h3>
+                        Chromatin
+                        Regulatory Networks
+                    </h3>
 
-    color: #17251e;
+                    <p>
+                        Interactions between
+                        chromatin regulators
+                    </p>
 
-    z-index: 5;
+                </div>
 
-    box-shadow:
-        0 0 0 14px rgba(220, 232, 222, 0.08),
-        0 25px 70px rgba(0, 0, 0, 0.25);
-}
 
-.centre-ring {
-    width: 175px;
-    height: 175px;
+                <!-- Genome -->
+                <div class="concept-node node-genome">
 
-    border: 1px solid #78927e;
+                    <span class="node-number">04</span>
 
-    border-radius: 50%;
+                    <h3>
+                        Genome
+                        Organisation
+                    </h3>
 
-    display: flex;
-    flex-direction: column;
+                    <p>
+                        Chromatin architecture
+                        and nuclear organisation
+                    </p>
 
-    justify-content: center;
-    align-items: center;
+                </div>
 
-    text-align: center;
-}
 
-.centre-ring span {
-    font-size: 12px;
-    letter-spacing: 0.16em;
-    font-weight: 700;
-}
+                <!-- Adaptation -->
+                <div class="concept-node node-adaptation">
 
-.centre-ring strong {
-    margin-top: 5px;
+                    <span class="node-number">05</span>
 
-    font-size: 22px;
-}
+                    <h3>Adaptation</h3>
 
+                    <p>
+                        Developmental plasticity
+                        and environmental response
+                    </p>
 
-/* Nodes */
+                </div>
 
-.concept-node {
-    position: absolute;
 
-    width: 225px;
+                <!-- Arabidopsis illustration -->
+                <div class="arabidopsis" aria-hidden="true">
 
-    padding: 23px;
+                    <div class="plant-root"></div>
+                    <div class="plant-stem"></div>
 
-    border: 1px solid #51645a;
+                    <div class="leaf leaf-1"></div>
+                    <div class="leaf leaf-2"></div>
+                    <div class="leaf leaf-3"></div>
+                    <div class="leaf leaf-4"></div>
+                    <div class="leaf leaf-5"></div>
+                    <div class="leaf leaf-6"></div>
 
-    background: rgba(255, 255, 255, 0.045);
+                    <span>Arabidopsis</span>
 
-    backdrop-filter: blur(5px);
+                </div>
 
-    z-index: 10;
+            </div>
 
-    transition:
-        transform 0.3s ease,
-        background 0.3s ease;
-}
 
-.concept-node:hover {
-    background: rgba(255, 255, 255, 0.09);
+            <!-- Research pathway -->
+            <div class="research-pathway">
 
-    transform: scale(1.025);
-}
+                <div class="pathway-item">
+                    <span>01</span>
+                    <strong>Evolution</strong>
+                </div>
 
-.node-number {
-    display: block;
+                <div class="pathway-arrow">→</div>
 
-    font-size: 10px;
+                <div class="pathway-item">
+                    <span>02</span>
+                    <strong>Regulatory Networks</strong>
+                </div>
 
-    letter-spacing: 0.15em;
+                <div class="pathway-arrow">→</div>
 
-    color: #93ae9b;
+                <div class="pathway-item">
+                    <span>03</span>
+                    <strong>Chromatin States</strong>
+                </div>
 
-    margin-bottom: 10px;
-}
+                <div class="pathway-arrow">→</div>
 
-.concept-node h3 {
-    color: white;
+                <div class="pathway-item">
+                    <span>04</span>
+                    <strong>Genome Organisation</strong>
+                </div>
 
-    font-size: 19px;
+                <div class="pathway-arrow">→</div>
 
-    margin-bottom: 8px;
-}
+                <div class="pathway-item">
+                    <span>05</span>
+                    <strong>Gene Regulation</strong>
+                </div>
 
-.concept-node p {
-    font-size: 12px;
-    line-height: 1.5;
-}
+                <div class="pathway-arrow">→</div>
 
+                <div class="pathway-item">
+                    <span>06</span>
+                    <strong>Adaptation</strong>
+                </div>
 
-/* Node positions */
+            </div>
 
-.node-evolution {
-    top: 35px;
-    left: 50%;
+        </div>
 
-    transform: translateX(-50%);
-}
+    </section>
 
-.node-function {
-    top: 245px;
-    right: 20px;
-}
 
-.node-chromatin {
-    bottom: 55px;
-    right: 80px;
-}
+    <!-- =========================
+         OBJECTIVES
+    ========================== -->
 
-.node-genome {
-    bottom: 55px;
-    left: 80px;
-}
+    <section id="objectives" class="objectives-section">
 
-.node-adaptation {
-    top: 245px;
-    left: 20px;
-}
+        <div class="content-container">
 
+            <div class="section-heading">
 
-/* =========================================================
-   CONNECTION LINES
-========================================================= */
+                <p class="section-label">
+                    RESEARCH OBJECTIVES
+                </p>
 
-.connection {
-    position: absolute;
+                <h2>
+                    Five interconnected objectives
+                </h2>
 
-    left: 50%;
-    top: 50%;
+            </div>
 
-    height: 1px;
 
-    width: 245px;
+            <div class="objective-list">
 
-    background: #566b5d;
+                <div class="objective">
 
-    transform-origin: left center;
+                    <div class="objective-number">01</div>
 
-    opacity: 0.8;
-}
+                    <div>
+                        <h3>Reconstruct evolutionary histories</h3>
 
-.connection-1 {
-    transform: rotate(-90deg);
-}
+                        <p>
+                            Determine how plant chromatin regulatory
+                            systems emerged, diversified and were
+                            remodelled throughout plant evolution.
+                        </p>
+                    </div>
 
-.connection-2 {
-    transform: rotate(-18deg);
-}
+                </div>
 
-.connection-3 {
-    transform: rotate(145deg);
-}
 
-.connection-4 {
-    transform: rotate(215deg);
-}
+                <div class="objective">
 
-.connection-5 {
-    transform: rotate(18deg);
-}
+                    <div class="objective-number">02</div>
 
+                    <div>
+                        <h3>Define molecular mechanisms</h3>
 
-/* =========================================================
-   ARABIDOPSIS
-========================================================= */
+                        <p>
+                            Identify the molecular interactions that
+                            recruit and position chromatin regulatory
+                            machinery at specific genomic regions.
+                        </p>
+                    </div>
 
-.arabidopsis {
-    position: absolute;
+                </div>
 
-    left: 50%;
-    bottom: -10px;
 
-    transform: translateX(-50%);
+                <div class="objective">
 
-    width: 70px;
-    height: 100px;
+                    <div class="objective-number">03</div>
 
-    z-index: 20;
-}
+                    <div>
+                        <h3>
+                            Connect chromatin to genome architecture
+                        </h3>
 
-.plant-stem {
-    position: absolute;
+                        <p>
+                            Investigate how chromatin regulatory networks
+                            influence three-dimensional genome organisation
+                            and nuclear compartmentalisation.
+                        </p>
+                    </div>
 
-    left: 34px;
-    bottom: 18px;
+                </div>
 
-    width: 3px;
-    height: 70px;
 
-    background: #78917c;
-}
+                <div class="objective">
 
-.plant-root {
-    position: absolute;
+                    <div class="objective-number">04</div>
 
-    bottom: 8px;
-    left: 27px;
+                    <div>
+                        <h3>Understand developmental regulation</h3>
 
-    width: 18px;
-    height: 12px;
+                        <p>
+                            Determine how epigenome regulation contributes
+                            to developmental programmes and cellular
+                            identity.
+                        </p>
+                    </div>
 
-    border-bottom: 1px solid #78917c;
-    border-radius: 50%;
-}
+                </div>
 
 
-/* leaves */
+                <div class="objective">
 
-.leaf {
-    position: absolute;
+                    <div class="objective-number">05</div>
 
-    width: 28px;
-    height: 14px;
+                    <div>
+                        <h3>Explain adaptation</h3>
 
-    border: 1px solid #8da591;
+                        <p>
+                            Establish how changes in chromatin state and
+                            genome organisation contribute to responses
+                            to environmental conditions.
+                        </p>
+                    </div>
 
-    border-radius: 100% 0 100% 0;
+                </div>
 
-    background: rgba(117, 148, 124, 0.22);
-}
+            </div>
 
-.leaf-1 {
-    left: 7px;
-    top: 47px;
-    transform: rotate(-25deg);
-}
+        </div>
 
-.leaf-2 {
-    left: 34px;
-    top: 40px;
-    transform: rotate(25deg);
-}
+    </section>
 
-.leaf-3 {
-    left: 4px;
-    top: 61px;
-    transform: rotate(-20deg);
-}
 
-.leaf-4 {
-    left: 35px;
-    top: 57px;
-    transform: rotate(20deg);
-}
+    <!-- =========================
+         FUTURE LAB
+    ========================== -->
 
-.leaf-5 {
-    left: 10px;
-    top: 30px;
-    transform: rotate(-30deg);
-}
+    <section id="future" class="future-section">
 
-.leaf-6 {
-    left: 31px;
-    top: 25px;
-    transform: rotate(30deg);
-}
+        <div class="content-container">
 
-.arabidopsis span {
-    position: absolute;
+            <div class="future-grid">
 
-    top: 105px;
-    left: 50%;
+                <div>
 
-    transform: translateX(-50%);
+                    <p class="section-label">
+                        FUTURE LAB
+                    </p>
 
-    white-space: nowrap;
+                    <h2>
+                        Experimental biology meets
+                        genomics and evolutionary analysis
+                    </h2>
 
-    font-size: 10px;
+                    <p>
+                        The future Khan Research Lab will integrate
+                        experimental and computational approaches to
+                        investigate plant chromatin regulation across
+                        molecular, genomic and evolutionary scales.
+                    </p>
 
-    color: #91a79a;
+                </div>
 
-    font-style: italic;
-}
 
+                <div class="future-pillars">
 
-/* =========================================================
-   RESEARCH PATHWAY
-========================================================= */
+                    <div class="future-pillar">
+                        <span>01</span>
+                        <h3>Experimental Biology</h3>
+                        <p>
+                            Molecular and cellular approaches to
+                            chromatin regulation.
+                        </p>
+                    </div>
 
-.research-pathway {
-    display: flex;
+                    <div class="future-pillar">
+                        <span>02</span>
+                        <h3>Genomics</h3>
+                        <p>
+                            Genome-wide analysis of chromatin,
+                            regulatory states and genome organisation.
+                        </p>
+                    </div>
 
-    align-items: center;
-    justify-content: center;
+                    <div class="future-pillar">
+                        <span>03</span>
+                        <h3>Computational Biology</h3>
+                        <p>
+                            Data-driven analysis of molecular,
+                            genomic and epigenomic datasets.
+                        </p>
+                    </div>
 
-    flex-wrap: wrap;
+                    <div class="future-pillar">
+                        <span>04</span>
+                        <h3>Evolutionary Analysis</h3>
+                        <p>
+                            Comparative approaches to uncover
+                            regulatory innovation across plant lineages.
+                        </p>
+                    </div>
 
-    gap: 12px;
+                </div>
 
-    padding-top: 35px;
+            </div>
 
-    border-top: 1px solid #3b4e43;
-}
+        </div>
 
-.pathway-item {
-    display: flex;
-    flex-direction: column;
+    </section>
 
-    gap: 3px;
 
-    min-width: 105px;
-}
+    <!-- =========================
+         ABOUT
+    ========================== -->
 
-.pathway-item span {
-    font-size: 9px;
+    <section class="about-section">
 
-    color: #779181;
+        <div class="content-container narrow">
 
-    letter-spacing: 0.15em;
-}
+            <p class="section-label">
+                ABOUT THE LAB
+            </p>
 
-.pathway-item strong {
-    font-size: 12px;
+            <h2>
+                Building a research programme around
+                plant epigenome regulation
+            </h2>
 
-    color: #e2e9e4;
-}
+            <p>
+                The Khan Research Lab is envisioned as an interdisciplinary
+                research programme investigating the evolution, molecular
+                function and biological consequences of plant chromatin
+                regulatory networks.
+            </p>
 
-.pathway-arrow {
-    color: #72887a;
-    font-size: 18px;
-}
+            <p>
+                By connecting evolutionary biology with molecular
+                mechanisms, genome organisation and plant adaptation,
+                the lab seeks to understand how regulatory systems are
+                built, modified and deployed across biological contexts.
+            </p>
 
+        </div>
 
-/* =========================================================
-   OBJECTIVES
-========================================================= */
+    </section>
 
-.objectives-section {
-    padding: 130px 0;
 
-    background: #f7f8f4;
-}
+    <!-- =========================
+         CONTACT
+    ========================== -->
 
-.objective-list {
-    border-top: 1px solid #d6ddd7;
-}
+    <section id="contact" class="contact-section">
 
-.objective {
-    display: grid;
+        <div class="content-container">
 
-    grid-template-columns: 120px 1fr;
+            <p class="section-label">
+                KHAN RESEARCH LAB
+            </p>
 
-    gap: 40px;
+            <h2>
+                Evolution. Chromatin. Genome Organisation. Adaptation.
+            </h2>
 
-    padding: 40px 0;
+            <p>
+                A developing research programme focused on understanding
+                how plant epigenome regulation connects molecular
+                mechanisms with genome organisation and adaptation.
+            </p>
 
-    border-bottom: 1px solid #d6ddd7;
-}
+            <a
+                href="mailto:your-email@example.com"
+                class="button button-primary"
+            >
+                Contact
+            </a>
 
-.objective-number {
-    font-size: 12px;
-    font-weight: 800;
+        </div>
 
-    letter-spacing: 0.15em;
+    </section>
 
-    color: #718879;
-}
+</main>
 
-.objective h3 {
-    margin-bottom: 10px;
-}
 
-.objective p {
-    max-width: 700px;
-}
+<!-- =========================
+     FOOTER
+========================== -->
 
+<footer class="site-footer">
 
-/* =========================================================
-   FUTURE LAB
-========================================================= */
+    <div class="footer-container">
 
-.future-section {
-    padding: 130px 0;
+        <div>
+            <strong>KHAN RESEARCH LAB</strong>
 
-    background: #ffffff;
-}
+            <p>
+                Plant Chromatin • Genome Organisation • Adaptation
+            </p>
+        </div>
 
-.future-grid {
-    display: grid;
+        <div>
+            <p>
+                © 2026 Khan Research Lab
+            </p>
+        </div>
 
-    grid-template-columns: 0.85fr 1.15fr;
+    </div>
 
-    gap: 100px;
+</footer>
+```
 
-    align-items: start;
-}
-
-.future-grid > div:first-child h2 {
-    margin: 20px 0 25px;
-}
-
-.future-grid > div:first-child p {
-    font-size: 17px;
-}
-
-.future-pillars {
-    display: grid;
-
-    grid-template-columns:
-        repeat(2, 1fr);
-
-    gap: 1px;
-
-    background: #d6ddd7;
-
-    border: 1px solid #d6ddd7;
-}
-
-.future-pillar {
-    padding: 30px;
-
-    background: #f7f8f4;
-}
-
-.future-pillar span {
-    font-size: 10px;
-    font-weight: 800;
-
-    color: #718879;
-
-    letter-spacing: 0.15em;
-}
-
-.future-pillar h3 {
-    font-size: 18px;
-
-    margin: 18px 0 10px;
-}
-
-.future-pillar p {
-    font-size: 13px;
-}
-
-
-/* =========================================================
-   ABOUT
-========================================================= */
-
-.about-section {
-    padding: 130px 0;
-
-    background: #edf1ec;
-}
-
-.about-section h2 {
-    margin: 20px 0 28px;
-}
-
-.about-section p:not(.section-label) {
-    font-size: 18px;
-
-    margin-bottom: 20px;
-}
-
-
-/* =========================================================
-   CONTACT
-========================================================= */
-
-.contact-section {
-    padding: 120px 0;
-
-    background: #1a2a21;
-
-    text-align: center;
-}
-
-.contact-section .section-label {
-    color: #9db4a4;
-}
-
-.contact-section h2 {
-    max-width: 800px;
-
-    margin: 20px auto;
-
-    color: white;
-}
-
-.contact-section > .content-container > p:not(.section-label) {
-    max-width: 650px;
-
-    margin: 0 auto 30px;
-
-    color: #b8c3bc;
-}
-
-
-/* =========================================================
-   FOOTER
-========================================================= */
-
-.site-footer {
-    background: #101914;
-
-    padding: 35px 0;
-
-    color: #aebbb3;
-}
-
-.footer-container {
-    width: min(1180px, 90%);
-    margin: auto;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: space-between;
-
-    gap: 30px;
-}
-
-.footer-container strong {
-    color: white;
-
-    font-size: 12px;
-
-    letter-spacing: 0.15em;
-}
-
-.footer-container p {
-    color: #7f8d85;
-
-    font-size: 11px;
-}
-
-
-/* =========================================================
-   RESPONSIVE DESIGN
-========================================================= */
-
-@media (max-width: 1000px) {
-
-    .navigation {
-        display: none;
-    }
-
-    .hero-content {
-        grid-template-columns: 1fr;
-
-        gap: 60px;
-    }
-
-    .hero-image-wrapper {
-        max-width: 650px;
-    }
-
-    .future-grid {
-        grid-template-columns: 1fr;
-
-        gap: 60px;
-    }
-
-    .concept-map {
-        transform: scale(0.9);
-        transform-origin: top center;
-
-        margin-bottom: 20px;
-    }
-}
-
-
-@media (max-width: 750px) {
-
-    h1 {
-        font-size: 43px;
-    }
-
-    h2 {
-        font-size: 36px;
-    }
-
-    .hero {
-        padding: 70px 0;
-    }
-
-    .research-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .research-card {
-        min-height: auto;
-    }
-
-    .concept-map {
-        height: 850px;
-
-        transform: none;
-    }
-
-    .concept-centre {
-        width: 170px;
-        height: 170px;
-    }
-
-    .centre-ring {
-        width: 140px;
-        height: 140px;
-    }
-
-    .centre-ring strong {
-        font-size: 18px;
-    }
-
-    .concept-node {
-        width: 190px;
-    }
-
-    .node-evolution {
-        top: 20px;
-    }
-
-    .node-function {
-        top: 210px;
-        right: 0;
-    }
-
-    .node-chromatin {
-        bottom: 100px;
-        right: 0;
-    }
-
-    .node-genome {
-        bottom: 100px;
-        left: 0;
-    }
-
-    .node-adaptation {
-        top: 210px;
-        left: 0;
-    }
-
-    .connection {
-        display: none;
-    }
-
-    .arabidopsis {
-        bottom: 25px;
-    }
-
-    .research-pathway {
-        display: none;
-    }
-
-    .objective {
-        grid-template-columns: 1fr;
-
-        gap: 15px;
-    }
-
-    .future-pillars {
-        grid-template-columns: 1fr;
-    }
-
-    .footer-container {
-        flex-direction: column;
-
-        align-items: flex-start;
-    }
-
-}
-
-
-@media (max-width: 480px) {
-
-    .nav-container {
-        min-height: 65px;
-    }
-
-    .logo {
-        font-size: 12px;
-    }
-
-    .hero-text h1 {
-        font-size: 39px;
-    }
-
-    .hero-subtitle {
-        font-size: 18px;
-    }
-
-    .hero-description {
-        font-size: 15px;
-    }
-
-    .button {
-        width: 100%;
-    }
-
-    .research-card {
-        padding: 30px;
-    }
-
-    .concept-map {
-        height: 850px;
-    }
-
-    .concept-node {
-        width: 170px;
-        padding: 18px;
-    }
-
-    .concept-node h3 {
-        font-size: 16px;
-    }
-
-    .concept-node p {
-        font-size: 11px;
-    }
-
-}
+</body>
+</html>
