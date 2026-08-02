@@ -101,7 +101,7 @@ a {
     display: flex;
     align-items: center;
 
-    gap: 27px;
+    gap: 24px;
 }
 
 .navigation a {
@@ -110,7 +110,8 @@ a {
 
     color: #53615a;
 
-    transition: color 0.25s ease;
+    transition:
+        color 0.25s ease;
 }
 
 .navigation a:hover {
@@ -124,8 +125,7 @@ a {
 
 h1,
 h2,
-h3,
-h4 {
+h3 {
     line-height: 1.12;
     letter-spacing: -0.025em;
 }
@@ -493,6 +493,241 @@ p {
 
 
 /* =========================================================
+   PUBLICATIONS
+========================================================= */
+
+.publications-section {
+    padding: 130px 0;
+
+    background: #f7f8f4;
+}
+
+.publication-year {
+    position: relative;
+
+    margin-bottom: 75px;
+
+    border-top: 1px solid #d3dbd4;
+}
+
+.publication-year:last-child {
+    margin-bottom: 0;
+}
+
+.publication-year-title {
+    display: inline-flex;
+
+    align-items: center;
+
+    min-width: 110px;
+
+    margin-top: -1px;
+
+    padding: 12px 22px;
+
+    background: #1b3328;
+
+    color: #ffffff;
+
+    font-size: 20px;
+
+    letter-spacing: 0.05em;
+}
+
+.publication-year-title strong {
+    font-weight: 800;
+}
+
+.publication-item {
+    display: grid;
+
+    grid-template-columns: 70px 1fr;
+
+    gap: 30px;
+
+    padding: 42px 0;
+
+    border-bottom: 1px solid #dce1dc;
+}
+
+.publication-item:last-child {
+    border-bottom: none;
+}
+
+.publication-number {
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.14em;
+
+    color: #718879;
+
+    padding-top: 4px;
+}
+
+.publication-content {
+    max-width: 900px;
+}
+
+.publication-content h3 {
+    font-size: 24px;
+
+    line-height: 1.28;
+
+    color: #17221d;
+
+    margin-bottom: 15px;
+}
+
+.publication-authors {
+    font-size: 14px;
+
+    color: #53615a;
+
+    margin-bottom: 8px;
+}
+
+.publication-journal {
+    font-size: 14px;
+
+    color: #30463a;
+
+    margin-bottom: 12px;
+}
+
+.publication-contribution {
+    font-size: 13px;
+
+    color: #6a756e;
+
+    margin-bottom: 15px;
+}
+
+.publication-contribution strong {
+    color: #30463a;
+}
+
+.publication-link {
+    display: inline-flex;
+
+    align-items: center;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.08em;
+
+    text-transform: uppercase;
+
+    color: #31563f;
+
+    border-bottom: 1px solid #9db3a4;
+
+    padding-bottom: 4px;
+
+    transition:
+        color 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.publication-link:hover {
+    color: #17221d;
+
+    border-color: #17221d;
+}
+
+
+/* =========================================================
+   COLLABORATORS
+========================================================= */
+
+.collaborator-section {
+    padding: 125px 0;
+
+    background: #17251e;
+
+    color: white;
+}
+
+.collaborator-box {
+    position: relative;
+
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 65px;
+
+    text-align: center;
+
+    border: 1px solid #52675a;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(159, 187, 167, 0.12),
+            transparent 45%
+        );
+}
+
+.collaborator-stars {
+    font-size: 20px;
+
+    letter-spacing: 10px;
+
+    color: #b8cdbd;
+
+    margin-bottom: 25px;
+}
+
+.collaborator-box .section-label {
+    color: #a4baa9;
+}
+
+.collaborator-box h2 {
+    color: white;
+
+    margin: 18px 0 25px;
+}
+
+.collaborator-box p:not(.section-label) {
+    max-width: 720px;
+
+    margin: 0 auto 18px;
+
+    color: #bdc9c1;
+
+    font-size: 16px;
+}
+
+.collaborator-note {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 20px;
+
+    padding: 13px 18px;
+
+    border: 1px solid #566c5d;
+
+    color: #dce6df;
+
+    font-size: 11px;
+
+    letter-spacing: 0.06em;
+}
+
+.collaborator-note span {
+    color: #a9c0ae;
+}
+
+
+/* =========================================================
    ACADEMIC JOURNEY
 ========================================================= */
 
@@ -591,352 +826,6 @@ p {
 
 .interest-card p {
     font-size: 13px;
-}
-
-
-/* =========================================================
-   COLLABORATION SECTION
-   IMPORTANT:
-   Completely separate from .research-image
-========================================================= */
-
-.collaborator-section {
-    padding: 125px 0;
-
-    background: #17251e;
-
-    color: white;
-}
-
-
-/* =========================================================
-   COLLABORATION INTRO
-========================================================= */
-
-.collaborator-intro {
-    max-width: 900px;
-
-    margin: 0 auto 65px;
-
-    text-align: center;
-}
-
-.collaborator-stars {
-    font-size: 20px;
-
-    letter-spacing: 10px;
-
-    color: #b8cdbd;
-
-    margin-bottom: 25px;
-}
-
-.collaborator-intro .section-label {
-    color: #a4baa9;
-}
-
-.collaborator-intro h2 {
-    color: white;
-
-    margin: 18px 0 25px;
-}
-
-.collaborator-intro p:not(.section-label) {
-    max-width: 760px;
-
-    margin: 0 auto 18px;
-
-    color: #bdc9c1;
-
-    font-size: 16px;
-}
-
-
-/* =========================================================
-   COLLABORATOR GRID
-========================================================= */
-
-.collaborator-grid {
-    display: grid;
-
-    grid-template-columns:
-        repeat(3, 1fr);
-
-    gap: 22px;
-
-    width: 100%;
-}
-
-
-/* =========================================================
-   COLLABORATOR CARD
-========================================================= */
-
-.collaborator-card {
-    position: relative;
-
-    min-width: 0;
-
-    padding: 34px 30px 32px;
-
-    background: #f5f7f3;
-
-    border: 1px solid #53685a;
-
-    color: #17221d;
-
-    overflow: hidden;
-
-    transition:
-        transform 0.3s ease,
-        border-color 0.3s ease,
-        box-shadow 0.3s ease;
-}
-
-.collaborator-card:hover {
-    transform: translateY(-6px);
-
-    border-color: #94aa9a;
-
-    box-shadow:
-        0 22px 50px rgba(0, 0, 0, 0.18);
-}
-
-
-/* =========================================================
-   COLLABORATOR CARD TOP
-========================================================= */
-
-.collaborator-card-top {
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
-    margin-bottom: 24px;
-}
-
-.collaborator-index {
-    font-size: 10px;
-
-    font-weight: 800;
-
-    letter-spacing: 0.16em;
-
-    color: #718879;
-}
-
-.collaborator-symbol {
-    color: #78927f;
-
-    font-size: 16px;
-}
-
-
-/* =========================================================
-   COLLABORATOR LOGO AREA
-   No external image required.
-========================================================= */
-
-.collaborator-logo-area {
-    width: 100%;
-
-    height: 95px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    margin-bottom: 25px;
-
-    background: #e7ece7;
-
-    border: 1px solid #d1dad2;
-}
-
-.institution-mark {
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    width: 64px;
-
-    height: 64px;
-
-    border-radius: 50%;
-
-    border: 1px solid #83978a;
-
-    color: #294334;
-
-    background: #f7f9f5;
-
-    font-size: 15px;
-
-    font-weight: 800;
-
-    letter-spacing: 0.04em;
-}
-
-
-/* =========================================================
-   COLLABORATOR TYPOGRAPHY
-========================================================= */
-
-.collaborator-type {
-    font-size: 9px !important;
-
-    font-weight: 800;
-
-    letter-spacing: 0.15em;
-
-    color: #718879 !important;
-
-    margin-bottom: 12px;
-}
-
-.collaborator-card h3 {
-    font-size: 23px;
-
-    color: #17221d;
-
-    margin-bottom: 7px;
-}
-
-.collaborator-card h4 {
-    font-size: 14px;
-
-    font-weight: 600;
-
-    color: #506258;
-
-    margin-bottom: 18px;
-}
-
-.collaborator-card > p:not(.collaborator-type) {
-    font-size: 14px;
-
-    line-height: 1.7;
-
-    color: #5c6962;
-
-    margin-bottom: 20px;
-}
-
-
-/* =========================================================
-   COLLABORATOR LINKS
-========================================================= */
-
-.collaborator-link {
-    display: inline-block;
-
-    font-size: 11px;
-
-    font-weight: 800;
-
-    color: #31563f;
-
-    border-bottom: 1px solid #9db3a4;
-
-    padding-bottom: 4px;
-
-    margin-right: 15px;
-
-    margin-bottom: 10px;
-
-    transition:
-        color 0.25s ease,
-        border-color 0.25s ease;
-}
-
-.collaborator-link:hover {
-    color: #17221d;
-
-    border-color: #17221d;
-}
-
-.collaborator-paper {
-    display: inline-block;
-
-    font-size: 10px;
-
-    font-weight: 700;
-
-    color: #6b786f;
-
-    margin-bottom: 10px;
-
-    border-bottom: 1px dotted #9da9a0;
-
-    padding-bottom: 3px;
-}
-
-.collaborator-paper:hover {
-    color: #24342b;
-}
-
-
-/* =========================================================
-   FUTURE COLLABORATION
-========================================================= */
-
-.future-collaboration {
-    max-width: 900px;
-
-    margin: 55px auto 0;
-
-    padding: 25px 30px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    gap: 25px;
-
-    text-align: center;
-
-    border: 1px solid #52675a;
-
-    background:
-        radial-gradient(
-            circle at 50% 0%,
-            rgba(159, 187, 167, 0.10),
-            transparent 55%
-        );
-}
-
-.future-star {
-    color: #a9c0ae;
-
-    font-size: 18px;
-}
-
-.future-collaboration strong {
-    display: block;
-
-    color: #e0e8e2;
-
-    font-size: 13px;
-
-    letter-spacing: 0.08em;
-
-    margin-bottom: 7px;
-}
-
-.future-collaboration p {
-    color: #aebbb3;
-
-    font-size: 12px;
-
-    max-width: 650px;
 }
 
 
@@ -1065,21 +954,6 @@ p {
             repeat(2, 1fr);
     }
 
-    .collaborator-grid {
-        grid-template-columns:
-            repeat(2, 1fr);
-    }
-
-    .collaborator-card:last-child {
-        grid-column: 1 / -1;
-
-        max-width: 520px;
-
-        width: 100%;
-
-        margin: 0 auto;
-    }
-
 }
 
 
@@ -1110,6 +984,7 @@ p {
     }
 
     .research-section,
+    .publications-section,
     .journey-section,
     .interests-section,
     .collaborator-section {
@@ -1118,6 +993,22 @@ p {
 
     .research-feature {
         padding: 45px 0;
+    }
+
+    .publication-item {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+
+        padding: 35px 0;
+    }
+
+    .publication-number {
+        padding-top: 0;
+    }
+
+    .publication-content h3 {
+        font-size: 21px;
     }
 
     .timeline-item {
@@ -1132,26 +1023,8 @@ p {
         grid-template-columns: 1fr;
     }
 
-    .collaborator-grid {
-        grid-template-columns: 1fr;
-
-        gap: 18px;
-    }
-
-    .collaborator-card:last-child {
-        grid-column: auto;
-
-        max-width: none;
-    }
-
-    .collaborator-intro {
-        margin-bottom: 45px;
-    }
-
-    .future-collaboration {
-        padding: 25px 20px;
-
-        gap: 12px;
+    .collaborator-box {
+        padding: 45px 25px;
     }
 
 }
@@ -1203,6 +1076,27 @@ p {
         max-height: 450px;
     }
 
+    .publication-year-title {
+        min-width: 90px;
+
+        padding: 10px 18px;
+
+        font-size: 18px;
+    }
+
+    .publication-content h3 {
+        font-size: 20px;
+    }
+
+    .publication-authors,
+    .publication-journal {
+        font-size: 13px;
+    }
+
+    .publication-contribution {
+        font-size: 12px;
+    }
+
     .collaborator-box {
         padding: 38px 20px;
     }
@@ -1213,18 +1107,12 @@ p {
         letter-spacing: 7px;
     }
 
-    .collaborator-card {
-        padding: 28px 22px;
-    }
-
-    .collaborator-logo-area {
-        height: 85px;
-    }
-
-    .future-collaboration {
+    .collaborator-note {
         flex-direction: column;
 
-        gap: 8px;
+        gap: 7px;
+
+        width: 100%;
     }
 
     .footer-container {
