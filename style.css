@@ -1,12 +1,12 @@
-```css
 /* =========================================================
-   AHAMED KHAN — RESEARCH WEBSITE
+   AHAMED KHAN
+   PERSONAL RESEARCH WEBSITE
    Plant Epigenetics • Chromatin • Evolution
 ========================================================= */
 
 
 /* =========================================================
-   RESET
+   BASIC RESET
 ========================================================= */
 
 * {
@@ -31,7 +31,7 @@ body {
     background: #f7f8f4;
     color: #17221d;
 
-    line-height: 1.65;
+    line-height: 1.6;
 }
 
 img {
@@ -40,8 +40,8 @@ img {
 }
 
 a {
-    color: inherit;
     text-decoration: none;
+    color: inherit;
 }
 
 
@@ -77,9 +77,9 @@ a {
 
 .nav-container {
     width: min(1280px, 92%);
-    min-height: 76px;
-
     margin: auto;
+
+    min-height: 76px;
 
     display: flex;
     align-items: center;
@@ -101,7 +101,7 @@ a {
     display: flex;
     align-items: center;
 
-    gap: 25px;
+    gap: 27px;
 }
 
 .navigation a {
@@ -127,25 +127,21 @@ h1,
 h2,
 h3 {
     line-height: 1.12;
-
     letter-spacing: -0.025em;
 }
 
 h1 {
-    font-size: clamp(45px, 6vw, 78px);
-
-    font-weight: 750;
+    font-size: clamp(46px, 6vw, 78px);
+    font-weight: 720;
 }
 
 h2 {
-    font-size: clamp(35px, 4vw, 57px);
-
-    font-weight: 680;
+    font-size: clamp(34px, 4vw, 56px);
+    font-weight: 650;
 }
 
 h3 {
-    font-size: 22px;
-
+    font-size: 25px;
     font-weight: 650;
 }
 
@@ -156,7 +152,6 @@ p {
 .section-label,
 .eyebrow {
     font-size: 10px;
-
     font-weight: 800;
 
     letter-spacing: 0.2em;
@@ -182,7 +177,6 @@ p {
     border-radius: 4px;
 
     font-size: 12px;
-
     font-weight: 750;
 
     transition:
@@ -197,7 +191,6 @@ p {
 
 .button-primary {
     background: #1b3328;
-
     color: white;
 }
 
@@ -207,7 +200,6 @@ p {
 
 .button-secondary {
     border: 1px solid #b9c4bc;
-
     color: #24342b;
 }
 
@@ -226,116 +218,87 @@ p {
     display: flex;
     align-items: center;
 
-    padding: 70px 0 90px;
+    padding: 85px 0 100px;
 
     background:
         radial-gradient(
-            circle at 85% 10%,
-            rgba(185, 204, 191, 0.24),
-            transparent 32%
+            circle at 82% 15%,
+            rgba(185, 204, 191, 0.28),
+            transparent 31%
         );
 }
 
 .hero-content {
     width: min(1280px, 92%);
-
     margin: auto;
 
     display: grid;
 
     grid-template-columns:
-        minmax(0, 0.82fr)
-        minmax(0, 1.18fr);
+        0.95fr 1.05fr;
 
     align-items: center;
 
-    gap: 65px;
+    gap: 75px;
 }
 
 .hero-text {
-    max-width: 650px;
+    max-width: 680px;
 }
 
 .hero-text .eyebrow {
-    margin-bottom: 22px;
+    margin-bottom: 24px;
 }
 
 .hero-text h1 {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 
 .degree {
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 550;
 
-    font-weight: 650;
-
-    color: #53655a;
+    color: #30463a;
 
     margin-bottom: 25px;
 }
 
-.hero-subtitle {
-    max-width: 630px;
+.hero-description {
+    max-width: 650px;
 
-    font-size: 19px;
+    font-size: 18px;
 
-    font-weight: 500;
-
-    color: #30463a;
-
-    margin-bottom: 30px;
+    margin-bottom: 32px;
 }
 
 .hero-buttons {
     display: flex;
-
     flex-wrap: wrap;
 
     gap: 12px;
 }
 
-
-/* =========================================================
-   MAIN HERO IMAGE
-   IMPORTANT: FULL IMAGE — NO CROPPING
-========================================================= */
-
 .hero-image-wrapper {
     width: 100%;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
 }
 
 .hero-image {
     width: 100%;
 
-    height: auto;
-
-    max-width: 100%;
-
-    /*
-       IMPORTANT:
-       Do not use aspect-ratio here.
-       Do not use object-fit: cover.
-       The image will preserve its complete
-       original proportions.
-    */
+    max-height: 700px;
 
     object-fit: contain;
 
     object-position: center;
 
-    display: block;
-
-    border-radius: 4px;
+    border-radius: 5px;
 
     border: 1px solid #d3dbd4;
 
+    background: #eef1ec;
+
     box-shadow:
-        0 30px 70px rgba(30, 45, 37, 0.13);
+        0 30px 70px rgba(30, 45, 37, 0.12);
 }
 
 
@@ -363,13 +326,13 @@ p {
 
 
 /* =========================================================
-   SECTION HEADING
+   SECTION HEADINGS
 ========================================================= */
 
 .section-heading {
     max-width: 780px;
 
-    margin-bottom: 60px;
+    margin-bottom: 65px;
 }
 
 .section-heading.centered {
@@ -389,333 +352,133 @@ p {
 
 
 /* =========================================================
-   RESEARCH
+   RESEARCH FRAMEWORK
 ========================================================= */
 
 .research-section {
-    padding: 120px 0;
+    padding: 125px 0;
 
     background: #ffffff;
 }
 
-.research-grid {
+
+/* =========================================================
+   RESEARCH FEATURE
+========================================================= */
+
+.research-feature {
     display: grid;
 
     grid-template-columns:
-        repeat(2, 1fr);
+        1.05fr 0.95fr;
 
-    gap: 24px;
+    gap: 70px;
+
+    align-items: center;
+
+    padding: 65px 0;
+
+    border-top: 1px solid #dce1dc;
 }
 
-.research-card {
-    min-height: 360px;
+.research-feature:last-child {
+    border-bottom: 1px solid #dce1dc;
+}
 
-    padding: 40px;
+.research-feature.reverse {
+    grid-template-columns:
+        0.95fr 1.05fr;
+}
 
-    background: #f6f7f4;
+.research-feature.reverse .research-image {
+    order: 2;
+}
 
-    border: 1px solid #dce1dc;
+.research-feature.reverse .research-content {
+    order: 1;
+}
+
+.research-image {
+    width: 100%;
+
+    overflow: hidden;
+
+    background: #f3f5f1;
+
+    border: 1px solid #d6ddd7;
+}
+
+.research-image img {
+    width: 100%;
+
+    max-height: 560px;
+
+    object-fit: contain;
 
     transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
+        transform 0.45s ease;
 }
 
-.research-card:hover {
-    transform: translateY(-5px);
+.research-image:hover img {
+    transform: scale(1.015);
+}
 
-    box-shadow:
-        0 20px 45px rgba(30, 45, 37, 0.08);
+.research-content {
+    max-width: 560px;
 }
 
 .research-number {
     display: block;
 
-    font-size: 11px;
-
+    font-size: 12px;
     font-weight: 800;
 
     letter-spacing: 0.15em;
 
     color: #718a7b;
 
-    margin-bottom: 48px;
+    margin-bottom: 13px;
 }
 
-.research-card h3 {
-    max-width: 480px;
-
-    margin-bottom: 17px;
-}
-
-.research-card p {
-    max-width: 500px;
-
-    margin-bottom: 25px;
-}
-
-.research-tags {
-    display: flex;
-
-    flex-wrap: wrap;
-
-    gap: 8px;
-}
-
-.research-tags span {
-    padding: 6px 9px;
-
-    border: 1px solid #ccd5ce;
-
-    border-radius: 20px;
-
-    font-size: 10px;
-
-    font-weight: 650;
-
-    color: #59685f;
-}
-
-
-/* =========================================================
-   COLLABORATION
-========================================================= */
-
-.collaboration-section {
-    padding: 110px 0;
-
-    background: #17251e;
-}
-
-.collaboration-box {
-    position: relative;
-
-    max-width: 900px;
-
-    margin: auto;
-
-    padding: 65px;
-
-    text-align: center;
-
-    border: 1px solid #53665a;
-
-    background:
-        radial-gradient(
-            circle at center,
-            rgba(135, 165, 143, 0.08),
-            transparent 65%
-        );
-}
-
-.collaboration-box .section-label {
-    color: #9db4a4;
-}
-
-.collaboration-box h2 {
-    color: white;
-
-    margin: 18px auto 25px;
-
-    max-width: 700px;
-}
-
-.collaboration-box p:not(.section-label) {
-    max-width: 720px;
-
-    margin: 0 auto 17px;
-
-    color: #bdc9c1;
-}
-
-.collaboration-box .button {
-    margin-top: 18px;
-}
-
-
-/* animated stars */
-
-.stars {
-    position: absolute;
-
-    inset: 0;
-
-    pointer-events: none;
-
-    overflow: hidden;
-}
-
-.stars span {
-    position: absolute;
-
-    color: #c8ddcd;
-
-    font-size: 18px;
-
-    opacity: 0.65;
-
-    animation:
-        starFloat 4s ease-in-out infinite;
-}
-
-.stars span:nth-child(1) {
-    top: 18%;
-    left: 12%;
-
-    animation-delay: 0s;
-}
-
-.stars span:nth-child(2) {
-    top: 30%;
-    right: 15%;
-
-    animation-delay: 1s;
-}
-
-.stars span:nth-child(3) {
-    bottom: 20%;
-    left: 20%;
-
-    animation-delay: 2s;
-}
-
-.stars span:nth-child(4) {
-    bottom: 18%;
-    right: 20%;
-
-    animation-delay: 0.5s;
-}
-
-.stars span:nth-child(5) {
-    top: 12%;
-    right: 38%;
-
-    animation-delay: 1.5s;
-}
-
-@keyframes starFloat {
-
-    0%,
-    100% {
-        transform:
-            translateY(0)
-            scale(1);
-
-        opacity: 0.35;
-    }
-
-    50% {
-        transform:
-            translateY(-8px)
-            scale(1.25);
-
-        opacity: 1;
-    }
-}
-
-
-/* =========================================================
-   RESEARCH FRAMEWORK
-========================================================= */
-
-.framework-section {
-    padding: 130px 0;
-
-    background: #f7f8f4;
-}
-
-.framework-feature {
-    display: grid;
-
-    grid-template-columns:
-        1.15fr
-        0.85fr;
-
-    gap: 65px;
-
-    align-items: center;
-
-    padding: 55px 0;
-
-    border-top: 1px solid #d7ded8;
-}
-
-.framework-feature.reverse {
-    grid-template-columns:
-        1.15fr
-        0.85fr;
-}
-
-.framework-feature.reverse .framework-image {
-    order: 2;
-}
-
-.framework-feature.reverse .framework-content {
-    order: 1;
-}
-
-.framework-image {
-    width: 100%;
-
-    background: white;
-
-    border: 1px solid #d6ddd7;
-
-    padding: 12px;
-}
-
-.framework-image img {
-    width: 100%;
-
-    height: auto;
-
-    object-fit: contain;
-}
-
-.framework-content {
-    max-width: 520px;
-}
-
-.feature-number {
-    display: block;
-
-    margin-bottom: 16px;
-
-    font-size: 10px;
+.research-category {
+    font-size: 10px !important;
 
     font-weight: 800;
 
-    letter-spacing: 0.18em;
+    letter-spacing: 0.15em;
 
-    color: #718879;
+    color: #637b6d;
+
+    margin-bottom: 15px;
 }
 
-.framework-content h3 {
-    font-size: 30px;
+.research-content h3 {
+    font-size: clamp(26px, 3vw, 38px);
 
     margin-bottom: 20px;
+
+    color: #17221d;
 }
 
-.framework-content p {
+.research-content p:not(.research-category) {
+    font-size: 16px;
+
     margin-bottom: 17px;
 }
 
 .paper-link {
-    display: inline-block;
+    display: inline-flex;
 
-    margin-top: 10px;
+    margin-top: 8px;
 
     font-size: 12px;
-
     font-weight: 800;
 
-    letter-spacing: 0.08em;
+    color: #31563f;
 
-    color: #315542;
+    border-bottom: 1px solid #9db3a4;
 
-    border-bottom: 1px solid #8ea495;
-
-    padding-bottom: 4px;
+    padding-bottom: 3px;
 
     transition:
         color 0.25s ease,
@@ -723,76 +486,9 @@ p {
 }
 
 .paper-link:hover {
-    color: #17251e;
+    color: #17221d;
 
-    border-color: #17251e;
-}
-
-
-/* =========================================================
-   PUBLICATIONS
-========================================================= */
-
-.publications-section {
-    padding: 130px 0;
-
-    background: white;
-}
-
-.publication-list {
-    border-top: 1px solid #d6ddd7;
-}
-
-.publication {
-    display: grid;
-
-    grid-template-columns: 100px 1fr;
-
-    gap: 40px;
-
-    padding: 35px 0;
-
-    border-bottom: 1px solid #d6ddd7;
-}
-
-.publication-year {
-    font-size: 12px;
-
-    font-weight: 800;
-
-    letter-spacing: 0.12em;
-
-    color: #718879;
-}
-
-.publication h3 {
-    max-width: 800px;
-
-    font-size: 21px;
-
-    line-height: 1.35;
-
-    margin-bottom: 10px;
-}
-
-.publication p {
-    margin-bottom: 10px;
-
-    font-size: 14px;
-}
-
-.publication a {
-    font-size: 11px;
-
-    font-weight: 800;
-
-    letter-spacing: 0.12em;
-
-    color: #315542;
-}
-
-.publication a:hover {
-    color: #17251e;
+    border-color: #17221d;
 }
 
 
@@ -803,26 +499,27 @@ p {
 .journey-section {
     padding: 130px 0;
 
-    background: #edf1ec;
+    background: #f7f8f4;
 }
 
-.journey-list {
-    border-top: 1px solid #cfd8d0;
+.timeline {
+    border-top: 1px solid #d6ddd7;
 }
 
-.journey-item {
+.timeline-item {
     display: grid;
 
-    grid-template-columns: 190px 1fr;
+    grid-template-columns:
+        220px 1fr;
 
     gap: 50px;
 
-    padding: 35px 0;
+    padding: 34px 0;
 
-    border-bottom: 1px solid #cfd8d0;
+    border-bottom: 1px solid #d6ddd7;
 }
 
-.journey-date {
+.timeline-date {
     font-size: 12px;
 
     font-weight: 800;
@@ -832,35 +529,156 @@ p {
     color: #718879;
 }
 
-.journey-item h3 {
+.timeline-content h3 {
     font-size: 22px;
 
     margin-bottom: 8px;
 }
 
-.journey-item p {
-    max-width: 700px;
+.timeline-content p {
+    font-size: 15px;
+
+    max-width: 650px;
 }
 
 
 /* =========================================================
-   ABOUT
+   RESEARCH INTERESTS
 ========================================================= */
 
-.about-section {
-    padding: 130px 0;
+.interests-section {
+    padding: 125px 0;
 
     background: #ffffff;
 }
 
-.about-section h2 {
-    margin: 20px 0 28px;
+.interest-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 1px;
+
+    background: #d6ddd7;
+
+    border: 1px solid #d6ddd7;
 }
 
-.about-section p:not(.section-label) {
-    font-size: 18px;
+.interest-card {
+    padding: 32px;
 
-    margin-bottom: 20px;
+    min-height: 250px;
+
+    background: #f7f8f4;
+}
+
+.interest-card span {
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.15em;
+
+    color: #718879;
+}
+
+.interest-card h3 {
+    font-size: 20px;
+
+    margin: 20px 0 12px;
+}
+
+.interest-card p {
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   COLLABORATORS
+========================================================= */
+
+.collaborator-section {
+    padding: 125px 0;
+
+    background: #17251e;
+
+    color: white;
+}
+
+.collaborator-box {
+    position: relative;
+
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 65px;
+
+    text-align: center;
+
+    border: 1px solid #52675a;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(159, 187, 167, 0.12),
+            transparent 45%
+        );
+}
+
+.collaborator-stars {
+    font-size: 20px;
+
+    letter-spacing: 10px;
+
+    color: #b8cdbd;
+
+    margin-bottom: 25px;
+}
+
+.collaborator-box .section-label {
+    color: #a4baa9;
+}
+
+.collaborator-box h2 {
+    color: white;
+
+    margin: 18px 0 25px;
+}
+
+.collaborator-box p:not(.section-label) {
+    max-width: 720px;
+
+    margin: 0 auto 18px;
+
+    color: #bdc9c1;
+
+    font-size: 16px;
+}
+
+.collaborator-note {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 20px;
+
+    padding: 13px 18px;
+
+    border: 1px solid #566c5d;
+
+    color: #dce6df;
+
+    font-size: 11px;
+
+    letter-spacing: 0.06em;
+}
+
+.collaborator-note span {
+    color: #a9c0ae;
 }
 
 
@@ -871,21 +689,15 @@ p {
 .contact-section {
     padding: 120px 0;
 
-    background: #1a2a21;
+    background: #edf1ec;
 
     text-align: center;
 }
 
-.contact-section .section-label {
-    color: #9db4a4;
-}
-
 .contact-section h2 {
-    max-width: 800px;
-
     margin: 20px auto;
 
-    color: white;
+    max-width: 800px;
 }
 
 .contact-section > .content-container > p:not(.section-label) {
@@ -893,7 +705,7 @@ p {
 
     margin: 0 auto 30px;
 
-    color: #b8c3bc;
+    font-size: 17px;
 }
 
 .contact-buttons {
@@ -901,19 +713,15 @@ p {
 
     justify-content: center;
 
-    flex-wrap: wrap;
-
     gap: 12px;
+
+    flex-wrap: wrap;
 }
 
 .dark-button {
-    color: white;
+    border-color: #8c9c92;
 
-    border-color: #718579;
-}
-
-.dark-button:hover {
-    background: #293d31;
+    color: #24342b;
 }
 
 
@@ -959,7 +767,7 @@ p {
 
 
 /* =========================================================
-   TABLET
+   RESPONSIVE — 1000px
 ========================================================= */
 
 @media (max-width: 1000px) {
@@ -974,42 +782,42 @@ p {
         gap: 55px;
     }
 
-    .hero-text {
+    .hero-image-wrapper {
         max-width: 800px;
     }
 
-    .hero-image-wrapper {
-        max-width: 850px;
-
-        margin: auto;
-    }
-
-    .framework-feature,
-    .framework-feature.reverse {
+    .research-feature,
+    .research-feature.reverse {
         grid-template-columns: 1fr;
 
-        gap: 40px;
+        gap: 45px;
     }
 
-    .framework-feature.reverse .framework-image {
-        order: 1;
+    .research-feature.reverse .research-image,
+    .research-feature.reverse .research-content {
+        order: initial;
     }
 
-    .framework-feature.reverse .framework-content {
-        order: 2;
+    .research-content {
+        max-width: 800px;
+    }
+
+    .interest-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
     }
 
 }
 
 
 /* =========================================================
-   MOBILE
+   RESPONSIVE — 750px
 ========================================================= */
 
 @media (max-width: 750px) {
 
     h1 {
-        font-size: 44px;
+        font-size: 46px;
     }
 
     h2 {
@@ -1017,64 +825,49 @@ p {
     }
 
     .hero {
-        padding: 65px 0 75px;
+        padding: 65px 0 80px;
     }
 
-    .hero-content {
-        width: 90%;
+    .hero-description {
+        font-size: 16px;
     }
 
-    .hero-subtitle {
-        font-size: 18px;
+    .button {
+        min-height: 48px;
     }
 
-    .research-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .research-card {
-        min-height: auto;
-
-        padding: 30px;
-    }
-
-    .collaboration-box {
-        padding: 40px 25px;
-    }
-
-    .framework-section,
-    .publications-section,
-    .journey-section {
+    .research-section,
+    .journey-section,
+    .interests-section,
+    .collaborator-section {
         padding: 90px 0;
     }
 
-    .framework-content h3 {
-        font-size: 26px;
+    .research-feature {
+        padding: 45px 0;
     }
 
-    .publication {
+    .timeline-item {
         grid-template-columns: 1fr;
 
         gap: 10px;
+
+        padding: 30px 0;
     }
 
-    .journey-item {
+    .interest-grid {
         grid-template-columns: 1fr;
-
-        gap: 10px;
     }
 
-    .footer-container {
-        flex-direction: column;
-
-        align-items: flex-start;
+    .collaborator-box {
+        padding: 45px 25px;
     }
 
 }
 
 
 /* =========================================================
-   SMALL MOBILE
+   RESPONSIVE — 480px
 ========================================================= */
 
 @media (max-width: 480px) {
@@ -1088,36 +881,59 @@ p {
     }
 
     .hero-text h1 {
-        font-size: 38px;
+        font-size: 39px;
     }
 
-    .hero-subtitle {
-        font-size: 16px;
+    .degree {
+        font-size: 18px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
     }
 
     .button {
         width: 100%;
     }
 
-    .hero-buttons {
+    .research-content h3 {
+        font-size: 27px;
+    }
+
+    .research-content p:not(.research-category) {
+        font-size: 15px;
+    }
+
+    .research-image img {
+        max-height: 450px;
+    }
+
+    .collaborator-box {
+        padding: 38px 20px;
+    }
+
+    .collaborator-stars {
+        font-size: 16px;
+
+        letter-spacing: 7px;
+    }
+
+    .collaborator-note {
+        flex-direction: column;
+
+        gap: 7px;
+
         width: 100%;
     }
 
-    .research-card {
-        padding: 27px;
-    }
+    .footer-container {
+        flex-direction: column;
 
-    .collaboration-box {
-        padding: 35px 20px;
-    }
-
-    .framework-image {
-        padding: 7px;
-    }
-
-    .publication h3 {
-        font-size: 18px;
+        align-items: flex-start;
     }
 
 }
-```
