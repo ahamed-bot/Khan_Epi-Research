@@ -1,11 +1,12 @@
 /* =========================================================
    AHAMED KHAN
+   PERSONAL RESEARCH WEBSITE
    Plant Epigenetics • Chromatin • Evolution
 ========================================================= */
 
 
 /* =========================================================
-   RESET
+   BASIC RESET
 ========================================================= */
 
 * {
@@ -39,8 +40,8 @@ img {
 }
 
 a {
-    color: inherit;
     text-decoration: none;
+    color: inherit;
 }
 
 
@@ -53,15 +54,8 @@ a {
     margin: 0 auto;
 }
 
-.section-heading {
-    max-width: 780px;
-    margin-bottom: 65px;
-}
-
-.section-heading.centered {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+.content-container.narrow {
+    width: min(850px, 90%);
 }
 
 
@@ -83,9 +77,9 @@ a {
 
 .nav-container {
     width: min(1280px, 92%);
-    min-height: 76px;
-
     margin: auto;
+
+    min-height: 76px;
 
     display: flex;
     align-items: center;
@@ -106,17 +100,17 @@ a {
 .navigation {
     display: flex;
     align-items: center;
-    gap: 25px;
+
+    gap: 27px;
 }
 
 .navigation a {
-    color: #53615a;
-
     font-size: 12px;
     font-weight: 650;
 
-    transition:
-        color 0.25s ease;
+    color: #53615a;
+
+    transition: color 0.25s ease;
 }
 
 .navigation a:hover {
@@ -130,38 +124,24 @@ a {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     line-height: 1.12;
-
     letter-spacing: -0.025em;
 }
 
 h1 {
-    font-size: clamp(42px, 5vw, 70px);
-    font-weight: 700;
-}
-
-h1 span {
-    display: block;
-
-    margin-top: 8px;
-
-    font-size: 0.35em;
-
-    letter-spacing: 0.02em;
-
-    font-weight: 600;
-
-    color: #66756d;
+    font-size: clamp(46px, 6vw, 78px);
+    font-weight: 720;
 }
 
 h2 {
-    font-size: clamp(35px, 4vw, 55px);
+    font-size: clamp(34px, 4vw, 56px);
     font-weight: 650;
 }
 
 h3 {
-    font-size: 23px;
+    font-size: 25px;
     font-weight: 650;
 }
 
@@ -169,9 +149,9 @@ p {
     color: #5c6962;
 }
 
-.section-label {
+.section-label,
+.eyebrow {
     font-size: 10px;
-
     font-weight: 800;
 
     letter-spacing: 0.2em;
@@ -181,108 +161,193 @@ p {
 
 
 /* =========================================================
-   HOMEPAGE IMAGE
+   BUTTONS
 ========================================================= */
 
-.homepage {
-    width: 100%;
+.button {
+    display: inline-flex;
 
-    background: #eef1ec;
-
-    border-bottom: 1px solid #dce2dc;
-}
-
-.homepage-image {
-    width: 100%;
-
-    display: flex;
+    align-items: center;
     justify-content: center;
 
-    overflow: hidden;
+    min-height: 50px;
+
+    padding: 0 24px;
+
+    border-radius: 4px;
+
+    font-size: 12px;
+    font-weight: 750;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        border-color 0.25s ease;
 }
 
-.homepage-image img {
-    width: 100%;
-    height: auto;
+.button:hover {
+    transform: translateY(-2px);
+}
 
-    display: block;
+.button-primary {
+    background: #1b3328;
+    color: white;
+}
 
-    object-fit: contain;
+.button-primary:hover {
+    background: #284a39;
+}
+
+.button-secondary {
+    border: 1px solid #b9c4bc;
+    color: #24342b;
+}
+
+.button-secondary:hover {
+    background: #e9ede8;
 }
 
 
 /* =========================================================
-   INTRODUCTION
+   HERO
 ========================================================= */
 
-.intro-section {
-    padding: 120px 0;
+.hero {
+    min-height: calc(100vh - 76px);
 
-    background: #f7f8f4;
+    display: flex;
+    align-items: center;
+
+    padding: 85px 0 100px;
+
+    background:
+        radial-gradient(
+            circle at 82% 15%,
+            rgba(185, 204, 191, 0.28),
+            transparent 31%
+        );
 }
 
-.intro-grid {
+.hero-content {
+    width: min(1280px, 92%);
+    margin: auto;
+
     display: grid;
 
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns:
+        0.95fr 1.05fr;
 
-    gap: 100px;
+    align-items: center;
 
-    align-items: start;
+    gap: 75px;
 }
 
-.intro-grid .section-label {
-    margin-bottom: 25px;
+.hero-text {
+    max-width: 680px;
 }
 
-.intro-text {
-    padding-top: 45px;
+.hero-text .eyebrow {
+    margin-bottom: 24px;
 }
 
-.intro-text .lead {
-    font-size: 22px;
+.hero-text h1 {
+    margin-bottom: 8px;
+}
 
-    line-height: 1.5;
+.degree {
+    font-size: 20px;
+    font-weight: 550;
 
     color: #30463a;
 
     margin-bottom: 25px;
 }
 
-.intro-text p {
-    font-size: 17px;
+.hero-description {
+    max-width: 650px;
 
-    margin-bottom: 20px;
+    font-size: 18px;
+
+    margin-bottom: 32px;
 }
 
-.intro-links {
+.hero-buttons {
     display: flex;
-
     flex-wrap: wrap;
 
-    gap: 25px;
-
-    margin-top: 30px;
+    gap: 12px;
 }
 
-.text-link {
-    color: #244434;
-
-    font-size: 12px;
-
-    font-weight: 800;
-
-    letter-spacing: 0.06em;
-
-    border-bottom: 1px solid #9caea2;
-
-    padding-bottom: 4px;
-
-    transition: border-color 0.25s ease;
+.hero-image-wrapper {
+    width: 100%;
 }
 
-.text-link:hover {
-    border-color: #17221d;
+.hero-image {
+    width: 100%;
+
+    max-height: 700px;
+
+    object-fit: contain;
+
+    object-position: center;
+
+    border-radius: 5px;
+
+    border: 1px solid #d3dbd4;
+
+    background: #eef1ec;
+
+    box-shadow:
+        0 30px 70px rgba(30, 45, 37, 0.12);
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.section-light {
+    background: #eef1ec;
+}
+
+.intro {
+    padding: 110px 0;
+}
+
+.intro h2 {
+    margin: 20px 0 28px;
+}
+
+.intro p:not(.section-label) {
+    font-size: 18px;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   SECTION HEADINGS
+========================================================= */
+
+.section-heading {
+    max-width: 780px;
+
+    margin-bottom: 65px;
+}
+
+.section-heading.centered {
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+}
+
+.section-heading h2 {
+    margin: 18px 0 20px;
+}
+
+.section-heading > p:last-child {
+    font-size: 18px;
 }
 
 
@@ -291,34 +356,27 @@ p {
 ========================================================= */
 
 .research-section {
-    padding: 130px 0;
+    padding: 125px 0;
 
     background: #ffffff;
 }
 
-.research-section .section-heading h2 {
-    margin: 18px 0 20px;
-}
-
-.research-section .section-heading > p:last-child {
-    font-size: 18px;
-}
-
 
 /* =========================================================
-   RESEARCH FEATURES
+   RESEARCH FEATURE
 ========================================================= */
 
 .research-feature {
     display: grid;
 
-    grid-template-columns: 1.05fr 0.95fr;
+    grid-template-columns:
+        1.05fr 0.95fr;
 
     gap: 70px;
 
     align-items: center;
 
-    padding: 70px 0;
+    padding: 65px 0;
 
     border-top: 1px solid #dce1dc;
 }
@@ -328,7 +386,8 @@ p {
 }
 
 .research-feature.reverse {
-    grid-template-columns: 0.95fr 1.05fr;
+    grid-template-columns:
+        0.95fr 1.05fr;
 }
 
 .research-feature.reverse .research-image {
@@ -342,22 +401,22 @@ p {
 .research-image {
     width: 100%;
 
-    background: #f5f6f3;
-
-    border: 1px solid #dce1dc;
-
     overflow: hidden;
+
+    background: #f3f5f1;
+
+    border: 1px solid #d6ddd7;
 }
 
 .research-image img {
     width: 100%;
 
-    height: auto;
+    max-height: 560px;
 
     object-fit: contain;
 
     transition:
-        transform 0.5s ease;
+        transform 0.45s ease;
 }
 
 .research-image:hover img {
@@ -371,173 +430,65 @@ p {
 .research-number {
     display: block;
 
-    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: 800;
 
-    color: #718879;
+    letter-spacing: 0.15em;
 
-    font-size: 10px;
+    color: #718a7b;
+
+    margin-bottom: 13px;
+}
+
+.research-category {
+    font-size: 10px !important;
 
     font-weight: 800;
 
-    letter-spacing: 0.18em;
+    letter-spacing: 0.15em;
+
+    color: #637b6d;
+
+    margin-bottom: 15px;
 }
 
 .research-content h3 {
-    font-size: clamp(27px, 3vw, 39px);
+    font-size: clamp(26px, 3vw, 38px);
 
-    margin-bottom: 22px;
+    margin-bottom: 20px;
+
+    color: #17221d;
 }
 
-.research-content p {
+.research-content p:not(.research-category) {
     font-size: 16px;
 
-    margin-bottom: 18px;
+    margin-bottom: 17px;
 }
 
 .paper-link {
-    display: inline-block;
+    display: inline-flex;
 
-    margin-top: 12px;
-
-    padding-bottom: 5px;
-
-    color: #244434;
+    margin-top: 8px;
 
     font-size: 12px;
-
     font-weight: 800;
 
-    letter-spacing: 0.06em;
+    color: #31563f;
 
-    border-bottom: 1px solid #9caea2;
+    border-bottom: 1px solid #9db3a4;
+
+    padding-bottom: 3px;
 
     transition:
-        border-color 0.25s ease,
-        color 0.25s ease;
+        color 0.25s ease,
+        border-color 0.25s ease;
 }
 
 .paper-link:hover {
     color: #17221d;
 
     border-color: #17221d;
-}
-
-
-/* =========================================================
-   RESEARCH AREAS
-========================================================= */
-
-.research-areas {
-    padding: 130px 0;
-
-    background: #eef1ec;
-}
-
-.areas-grid {
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 1px;
-
-    background: #d4dbd5;
-
-    border: 1px solid #d4dbd5;
-}
-
-.area-card {
-    min-height: 270px;
-
-    padding: 35px;
-
-    background: #f7f8f4;
-}
-
-.area-card > span {
-    color: #718879;
-
-    font-size: 11px;
-
-    font-weight: 800;
-
-    letter-spacing: 0.15em;
-}
-
-.area-card h3 {
-    margin: 25px 0 12px;
-
-    font-size: 22px;
-}
-
-.area-card p {
-    font-size: 14px;
-}
-
-
-/* =========================================================
-   PUBLICATIONS
-========================================================= */
-
-.publications-section {
-    padding: 130px 0;
-
-    background: #ffffff;
-}
-
-.publication-list {
-    border-top: 1px solid #d6ddd7;
-}
-
-.publication {
-    display: grid;
-
-    grid-template-columns: 100px 1fr;
-
-    gap: 35px;
-
-    padding: 38px 0;
-
-    border-bottom: 1px solid #d6ddd7;
-}
-
-.publication-year {
-    font-size: 12px;
-
-    font-weight: 800;
-
-    letter-spacing: 0.15em;
-
-    color: #718879;
-}
-
-.publication h3 {
-    max-width: 850px;
-
-    margin-bottom: 10px;
-
-    font-size: 20px;
-
-    line-height: 1.35;
-}
-
-.publication p {
-    font-size: 14px;
-
-    margin-bottom: 12px;
-}
-
-.publication a {
-    color: #244434;
-
-    font-size: 11px;
-
-    font-weight: 800;
-
-    letter-spacing: 0.08em;
-}
-
-.publication a:hover {
-    text-decoration: underline;
 }
 
 
@@ -551,269 +502,441 @@ p {
     background: #f7f8f4;
 }
 
-.journey-list {
+.timeline {
     border-top: 1px solid #d6ddd7;
 }
 
-.journey-item {
+.timeline-item {
     display: grid;
 
-    grid-template-columns: 180px 1fr;
+    grid-template-columns:
+        220px 1fr;
 
-    gap: 45px;
+    gap: 50px;
 
-    padding: 35px 0;
+    padding: 34px 0;
 
     border-bottom: 1px solid #d6ddd7;
 }
 
-.journey-date {
-    color: #718879;
-
+.timeline-date {
     font-size: 12px;
 
     font-weight: 800;
 
-    letter-spacing: 0.06em;
+    letter-spacing: 0.08em;
+
+    color: #718879;
 }
 
-.journey-item h3 {
-    margin-bottom: 8px;
-
+.timeline-content h3 {
     font-size: 22px;
+
+    margin-bottom: 8px;
 }
 
-.journey-item p {
+.timeline-content p {
     font-size: 15px;
+
+    max-width: 650px;
 }
 
 
 /* =========================================================
-   COLLABORATION
+   RESEARCH INTERESTS
 ========================================================= */
 
-.collaboration-section {
-    padding: 130px 0;
+.interests-section {
+    padding: 125px 0;
+
+    background: #ffffff;
+}
+
+.interest-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 1px;
+
+    background: #d6ddd7;
+
+    border: 1px solid #d6ddd7;
+}
+
+.interest-card {
+    padding: 32px;
+
+    min-height: 250px;
+
+    background: #f7f8f4;
+}
+
+.interest-card span {
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.15em;
+
+    color: #718879;
+}
+
+.interest-card h3 {
+    font-size: 20px;
+
+    margin: 20px 0 12px;
+}
+
+.interest-card p {
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   COLLABORATION SECTION
+   IMPORTANT:
+   Completely separate from .research-image
+========================================================= */
+
+.collaborator-section {
+    padding: 125px 0;
 
     background: #17251e;
 
     color: white;
 }
 
-.collaboration-section p {
-    color: #b8c3bd;
+
+/* =========================================================
+   COLLABORATION INTRO
+========================================================= */
+
+.collaborator-intro {
+    max-width: 900px;
+
+    margin: 0 auto 65px;
+
+    text-align: center;
 }
 
-.collaboration-section .section-label {
+.collaborator-stars {
+    font-size: 20px;
+
+    letter-spacing: 10px;
+
+    color: #b8cdbd;
+
+    margin-bottom: 25px;
+}
+
+.collaborator-intro .section-label {
     color: #a4baa9;
 }
 
-.collaboration-section h2 {
+.collaborator-intro h2 {
     color: white;
+
+    margin: 18px 0 25px;
 }
 
-.collaboration-section .section-heading > p:last-child {
-    max-width: 700px;
+.collaborator-intro p:not(.section-label) {
+    max-width: 760px;
 
-    margin: 25px auto 0;
+    margin: 0 auto 18px;
 
-    font-size: 17px;
+    color: #bdc9c1;
+
+    font-size: 16px;
 }
 
 
 /* =========================================================
-   COLLABORATION CALLOUT
+   COLLABORATOR GRID
 ========================================================= */
 
-.collaboration-callout {
-    position: relative;
-
-    max-width: 900px;
-
-    margin: 0 auto 80px;
-
-    padding: 50px;
-
-    text-align: center;
-
-    border: 1px solid #5c7566;
-
-    background:
-        radial-gradient(
-            circle at 50% 0%,
-            rgba(168, 198, 177, 0.12),
-            transparent 55%
-        );
-
-    box-shadow:
-        0 25px 80px rgba(0, 0, 0, 0.18);
-}
-
-.star-decoration {
-    margin-bottom: 15px;
-
-    color: #b6cdbb;
-
-    font-size: 25px;
-
-    animation: starPulse 2.5s ease-in-out infinite;
-}
-
-@keyframes starPulse {
-
-    0%,
-    100% {
-        opacity: 0.45;
-
-        transform: scale(0.9);
-    }
-
-    50% {
-        opacity: 1;
-
-        transform: scale(1.15);
-    }
-
-}
-
-.collaboration-callout h3 {
-    color: white;
-
-    font-size: 30px;
-
-    margin-bottom: 15px;
-}
-
-.collaboration-callout p {
-    max-width: 730px;
-
-    margin: 0 auto 15px;
-
-    font-size: 15px;
-}
-
-
-/* =========================================================
-   COLLABORATORS
-========================================================= */
-
-.collaborators-grid {
+.collaborator-grid {
     display: grid;
 
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns:
+        repeat(3, 1fr);
 
-    gap: 20px;
+    gap: 22px;
+
+    width: 100%;
 }
+
+
+/* =========================================================
+   COLLABORATOR CARD
+========================================================= */
 
 .collaborator-card {
-    display: grid;
+    position: relative;
 
-    grid-template-columns: 70px 1fr;
+    min-width: 0;
 
-    gap: 25px;
+    padding: 34px 30px 32px;
 
-    padding: 35px;
+    background: #f5f7f3;
 
-    border: 1px solid #405449;
+    border: 1px solid #53685a;
 
-    background: rgba(255, 255, 255, 0.035);
+    color: #17221d;
+
+    overflow: hidden;
 
     transition:
         transform 0.3s ease,
-        background 0.3s ease,
-        border-color 0.3s ease;
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 .collaborator-card:hover {
-    transform: translateY(-4px);
+    transform: translateY(-6px);
 
-    background: rgba(255, 255, 255, 0.065);
+    border-color: #94aa9a;
 
-    border-color: #718a7b;
+    box-shadow:
+        0 22px 50px rgba(0, 0, 0, 0.18);
 }
 
-.collaborator-logo {
-    width: 62px;
-    height: 62px;
+
+/* =========================================================
+   COLLABORATOR CARD TOP
+========================================================= */
+
+.collaborator-card-top {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 24px;
+}
+
+.collaborator-index {
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.16em;
+
+    color: #718879;
+}
+
+.collaborator-symbol {
+    color: #78927f;
+
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   COLLABORATOR LOGO AREA
+   No external image required.
+========================================================= */
+
+.collaborator-logo-area {
+    width: 100%;
+
+    height: 95px;
 
     display: flex;
 
     align-items: center;
+
     justify-content: center;
 
-    border: 1px solid #718a7b;
+    margin-bottom: 25px;
+
+    background: #e7ece7;
+
+    border: 1px solid #d1dad2;
+}
+
+.institution-mark {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 64px;
+
+    height: 64px;
 
     border-radius: 50%;
 
-    color: #d5e0d8;
+    border: 1px solid #83978a;
 
-    font-size: 23px;
+    color: #294334;
 
-    font-weight: 700;
-}
+    background: #f7f9f5;
 
-.collaborator-label {
-    display: block;
-
-    margin-bottom: 8px;
-
-    color: #91a99a;
-
-    font-size: 9px;
+    font-size: 15px;
 
     font-weight: 800;
 
-    letter-spacing: 0.17em;
+    letter-spacing: 0.04em;
+}
+
+
+/* =========================================================
+   COLLABORATOR TYPOGRAPHY
+========================================================= */
+
+.collaborator-type {
+    font-size: 9px !important;
+
+    font-weight: 800;
+
+    letter-spacing: 0.15em;
+
+    color: #718879 !important;
+
+    margin-bottom: 12px;
 }
 
 .collaborator-card h3 {
-    color: white;
+    font-size: 23px;
 
-    font-size: 21px;
+    color: #17221d;
 
-    margin-bottom: 3px;
+    margin-bottom: 7px;
 }
 
-.collaborator-card .institution {
-    color: #a8b8ae;
+.collaborator-card h4 {
+    font-size: 14px;
 
-    font-size: 12px;
+    font-weight: 600;
 
-    margin-bottom: 15px;
-}
-
-.collaborator-card p:not(.institution) {
-    font-size: 13px;
+    color: #506258;
 
     margin-bottom: 18px;
 }
 
-.collaborator-card a {
-    display: inline-block;
+.collaborator-card > p:not(.collaborator-type) {
+    font-size: 14px;
 
-    color: #c4d6c9;
+    line-height: 1.7;
+
+    color: #5c6962;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   COLLABORATOR LINKS
+========================================================= */
+
+.collaborator-link {
+    display: inline-block;
 
     font-size: 11px;
 
-    font-weight: 750;
+    font-weight: 800;
 
-    letter-spacing: 0.05em;
+    color: #31563f;
+
+    border-bottom: 1px solid #9db3a4;
+
+    padding-bottom: 4px;
+
+    margin-right: 15px;
+
+    margin-bottom: 10px;
+
+    transition:
+        color 0.25s ease,
+        border-color 0.25s ease;
 }
 
-.collaborator-card a:hover {
-    text-decoration: underline;
+.collaborator-link:hover {
+    color: #17221d;
+
+    border-color: #17221d;
 }
 
-.collaborator-card .secondary-link {
-    margin-left: 15px;
+.collaborator-paper {
+    display: inline-block;
 
-    color: #91a99a;
+    font-size: 10px;
+
+    font-weight: 700;
+
+    color: #6b786f;
+
+    margin-bottom: 10px;
+
+    border-bottom: 1px dotted #9da9a0;
+
+    padding-bottom: 3px;
 }
 
-.future-collaborator {
-    border-style: dashed;
+.collaborator-paper:hover {
+    color: #24342b;
+}
 
-    opacity: 0.85;
+
+/* =========================================================
+   FUTURE COLLABORATION
+========================================================= */
+
+.future-collaboration {
+    max-width: 900px;
+
+    margin: 55px auto 0;
+
+    padding: 25px 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    text-align: center;
+
+    border: 1px solid #52675a;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(159, 187, 167, 0.10),
+            transparent 55%
+        );
+}
+
+.future-star {
+    color: #a9c0ae;
+
+    font-size: 18px;
+}
+
+.future-collaboration strong {
+    display: block;
+
+    color: #e0e8e2;
+
+    font-size: 13px;
+
+    letter-spacing: 0.08em;
+
+    margin-bottom: 7px;
+}
+
+.future-collaboration p {
+    color: #aebbb3;
+
+    font-size: 12px;
+
+    max-width: 650px;
 }
 
 
@@ -822,23 +945,17 @@ p {
 ========================================================= */
 
 .contact-section {
-    padding: 130px 0;
+    padding: 120px 0;
 
-    background: #eef1ec;
+    background: #edf1ec;
 
     text-align: center;
 }
 
-.contact-section .section-label {
-    color: #637b6d;
-}
-
 .contact-section h2 {
-    max-width: 850px;
-
     margin: 20px auto;
 
-    font-size: clamp(35px, 4vw, 55px);
+    max-width: 800px;
 }
 
 .contact-section > .content-container > p:not(.section-label) {
@@ -854,61 +971,15 @@ p {
 
     justify-content: center;
 
-    flex-wrap: wrap;
-
     gap: 12px;
+
+    flex-wrap: wrap;
 }
 
-
-/* =========================================================
-   BUTTONS
-========================================================= */
-
-.button {
-    min-height: 50px;
-
-    display: inline-flex;
-
-    align-items: center;
-    justify-content: center;
-
-    padding: 0 25px;
-
-    border-radius: 4px;
-
-    font-size: 12px;
-
-    font-weight: 750;
-
-    letter-spacing: 0.04em;
-
-    transition:
-        transform 0.25s ease,
-        background 0.25s ease;
-}
-
-.button:hover {
-    transform: translateY(-2px);
-}
-
-.button-primary {
-    background: #1b3328;
-
-    color: white;
-}
-
-.button-primary:hover {
-    background: #284a39;
-}
-
-.button-secondary {
-    border: 1px solid #aab7ae;
+.dark-button {
+    border-color: #8c9c92;
 
     color: #24342b;
-}
-
-.button-secondary:hover {
-    background: #e1e7e1;
 }
 
 
@@ -917,9 +988,9 @@ p {
 ========================================================= */
 
 .site-footer {
-    padding: 35px 0;
-
     background: #101914;
+
+    padding: 35px 0;
 
     color: #aebbb3;
 }
@@ -932,6 +1003,7 @@ p {
     display: flex;
 
     align-items: center;
+
     justify-content: space-between;
 
     gap: 30px;
@@ -953,7 +1025,7 @@ p {
 
 
 /* =========================================================
-   RESPONSIVE
+   RESPONSIVE — 1000px
 ========================================================= */
 
 @media (max-width: 1000px) {
@@ -962,14 +1034,14 @@ p {
         display: none;
     }
 
-    .intro-grid {
+    .hero-content {
         grid-template-columns: 1fr;
 
-        gap: 30px;
+        gap: 55px;
     }
 
-    .intro-text {
-        padding-top: 0;
+    .hero-image-wrapper {
+        max-width: 800px;
     }
 
     .research-feature,
@@ -984,124 +1056,175 @@ p {
         order: initial;
     }
 
-    .areas-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .research-content {
+        max-width: 800px;
+    }
+
+    .interest-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .collaborator-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .collaborator-card:last-child {
+        grid-column: 1 / -1;
+
+        max-width: 520px;
+
+        width: 100%;
+
+        margin: 0 auto;
     }
 
 }
 
 
-@media (max-width: 700px) {
+/* =========================================================
+   RESPONSIVE — 750px
+========================================================= */
+
+@media (max-width: 750px) {
+
+    h1 {
+        font-size: 46px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    .hero {
+        padding: 65px 0 80px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .button {
+        min-height: 48px;
+    }
+
+    .research-section,
+    .journey-section,
+    .interests-section,
+    .collaborator-section {
+        padding: 90px 0;
+    }
+
+    .research-feature {
+        padding: 45px 0;
+    }
+
+    .timeline-item {
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+
+        padding: 30px 0;
+    }
+
+    .interest-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .collaborator-grid {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+    .collaborator-card:last-child {
+        grid-column: auto;
+
+        max-width: none;
+    }
+
+    .collaborator-intro {
+        margin-bottom: 45px;
+    }
+
+    .future-collaboration {
+        padding: 25px 20px;
+
+        gap: 12px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — 480px
+========================================================= */
+
+@media (max-width: 480px) {
 
     .nav-container {
         min-height: 65px;
     }
 
     .logo {
-        font-size: 12px;
+        font-size: 11px;
     }
 
-    .homepage-image img {
+    .hero-text h1 {
+        font-size: 39px;
+    }
+
+    .degree {
+        font-size: 18px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .button {
         width: 100%;
-        height: auto;
-    }
-
-    .intro-section,
-    .research-section,
-    .research-areas,
-    .publications-section,
-    .journey-section,
-    .collaboration-section,
-    .contact-section {
-        padding: 90px 0;
-    }
-
-    .areas-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .publication {
-        grid-template-columns: 1fr;
-
-        gap: 10px;
-    }
-
-    .journey-item {
-        grid-template-columns: 1fr;
-
-        gap: 10px;
-    }
-
-    .collaborators-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .collaboration-callout {
-        padding: 35px 25px;
-    }
-
-    .collaborator-card {
-        grid-template-columns: 55px 1fr;
-
-        padding: 25px;
-
-        gap: 18px;
-    }
-
-    .collaborator-logo {
-        width: 52px;
-        height: 52px;
-
-        font-size: 19px;
-    }
-
-}
-
-
-@media (max-width: 480px) {
-
-    h1 {
-        font-size: 40px;
-    }
-
-    h2 {
-        font-size: 34px;
-    }
-
-    .intro-text .lead {
-        font-size: 19px;
     }
 
     .research-content h3 {
         font-size: 27px;
     }
 
-    .research-feature {
-        padding: 50px 0;
+    .research-content p:not(.research-category) {
+        font-size: 15px;
     }
 
-    .collaboration-callout h3 {
-        font-size: 25px;
+    .research-image img {
+        max-height: 450px;
+    }
+
+    .collaborator-box {
+        padding: 38px 20px;
+    }
+
+    .collaborator-stars {
+        font-size: 16px;
+
+        letter-spacing: 7px;
     }
 
     .collaborator-card {
-        grid-template-columns: 1fr;
+        padding: 28px 22px;
     }
 
-    .collaborator-logo {
-        margin-bottom: 5px;
+    .collaborator-logo-area {
+        height: 85px;
     }
 
-    .collaborator-card .secondary-link {
-        display: block;
+    .future-collaboration {
+        flex-direction: column;
 
-        margin-left: 0;
-
-        margin-top: 10px;
-    }
-
-    .contact-buttons .button {
-        width: 100%;
+        gap: 8px;
     }
 
     .footer-container {
