@@ -30,6 +30,7 @@ body {
 
     background: #f7f8f4;
     color: #17221d;
+
     line-height: 1.6;
 }
 
@@ -100,7 +101,7 @@ a {
     display: flex;
     align-items: center;
 
-    gap: 24px;
+    gap: 23px;
 }
 
 .navigation a {
@@ -109,7 +110,8 @@ a {
 
     color: #53615a;
 
-    transition: color 0.25s ease;
+    transition:
+        color 0.25s ease;
 }
 
 .navigation a:hover {
@@ -286,6 +288,7 @@ p {
     max-height: 700px;
 
     object-fit: contain;
+
     object-position: center;
 
     border-radius: 5px;
@@ -300,7 +303,7 @@ p {
 
 
 /* =========================================================
-   INTRO
+   INTRO / RESEARCH
 ========================================================= */
 
 .section-light {
@@ -317,7 +320,80 @@ p {
 
 .intro p:not(.section-label) {
     font-size: 18px;
+
     margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   MAJOR RESEARCH OBJECTIVES
+========================================================= */
+
+.research-objectives {
+    margin-top: 70px;
+    padding-top: 50px;
+
+    border-top: 1px solid #ccd5ce;
+}
+
+.objectives-heading {
+    margin-bottom: 30px;
+}
+
+.objectives-heading h3 {
+    margin-top: 14px;
+
+    font-size: 29px;
+
+    color: #17221d;
+}
+
+.objective-item {
+    display: grid;
+
+    grid-template-columns: 75px 1fr;
+
+    gap: 25px;
+
+    padding: 30px 0;
+
+    border-top: 1px solid #d1d8d2;
+}
+
+.objective-item:last-child {
+    border-bottom: 1px solid #d1d8d2;
+}
+
+.objective-number {
+    font-size: 12px;
+
+    font-weight: 850;
+
+    letter-spacing: 0.15em;
+
+    color: #718879;
+
+    padding-top: 5px;
+}
+
+.objective-content h3 {
+    font-size: 22px;
+
+    color: #24362b;
+
+    margin-bottom: 12px;
+}
+
+.objective-goal {
+    font-size: 15px !important;
+
+    margin-bottom: 0 !important;
+
+    max-width: 700px;
+}
+
+.objective-goal strong {
+    color: #263b2e;
 }
 
 
@@ -327,12 +403,14 @@ p {
 
 .section-heading {
     max-width: 780px;
+
     margin-bottom: 65px;
 }
 
 .section-heading.centered {
     margin-left: auto;
     margin-right: auto;
+
     text-align: center;
 }
 
@@ -351,8 +429,14 @@ p {
 
 .research-section {
     padding: 125px 0;
+
     background: #ffffff;
 }
+
+
+/* =========================================================
+   RESEARCH FEATURE
+========================================================= */
 
 .research-feature {
     display: grid;
@@ -388,6 +472,7 @@ p {
 
 .research-image {
     width: 100%;
+
     overflow: hidden;
 
     background: #f3f5f1;
@@ -402,7 +487,8 @@ p {
 
     object-fit: contain;
 
-    transition: transform 0.45s ease;
+    transition:
+        transform 0.45s ease;
 }
 
 .research-image:hover img {
@@ -448,6 +534,7 @@ p {
 
 .research-content p:not(.research-category) {
     font-size: 16px;
+
     margin-bottom: 17px;
 }
 
@@ -472,6 +559,7 @@ p {
 
 .paper-link:hover {
     color: #17221d;
+
     border-color: #17221d;
 }
 
@@ -482,39 +570,56 @@ p {
 
 .publications-section {
     padding: 125px 0;
+
     background: #f7f8f4;
 }
 
 .publication-year {
-    margin-bottom: 70px;
+    display: grid;
+
+    grid-template-columns: 145px 1fr;
+
+    gap: 45px;
+
+    padding: 55px 0;
+
+    border-top: 1px solid #d3dad4;
 }
 
-.year-heading {
-    font-size: clamp(42px, 6vw, 72px);
+.publication-year:last-child {
+    border-bottom: 1px solid #d3dad4;
+}
+
+.year-label {
+    font-size: 30px;
 
     font-weight: 850;
 
-    line-height: 1;
+    letter-spacing: -0.02em;
 
-    color: #1b3328;
+    color: #263b2e;
+}
 
-    letter-spacing: -0.04em;
+.publication-list {
+    display: flex;
 
-    padding-bottom: 20px;
+    flex-direction: column;
 
-    margin-bottom: 0;
-
-    border-bottom: 2px solid #1b3328;
+    gap: 0;
 }
 
 .publication-item {
-    position: relative;
+    padding: 0 0 42px;
 
-    padding: 38px 30px 40px 0;
+    margin-bottom: 42px;
 
-    border-bottom: 1px solid #d6ddd7;
+    border-bottom: 1px solid #dce1dc;
+}
 
-    max-width: 1000px;
+.publication-item:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: none;
 }
 
 .publication-item h3 {
@@ -522,63 +627,57 @@ p {
 
     line-height: 1.3;
 
-    color: #17221d;
+    color: #1c2b22;
 
     margin-bottom: 14px;
-
-    max-width: 900px;
 }
 
 .publication-authors {
     font-size: 14px;
 
-    color: #526159;
+    color: #58665e;
 
     margin-bottom: 8px;
 }
 
 .publication-journal {
-    font-size: 14px;
+    font-size: 13px;
 
     font-style: italic;
 
-    color: #718078;
+    color: #637b6d;
 
-    margin-bottom: 13px;
+    margin-bottom: 12px;
 }
 
 .publication-contribution {
-    font-size: 13px;
-
-    color: #68766f;
+    font-size: 14px;
 
     max-width: 850px;
 
-    margin-bottom: 14px;
+    margin-bottom: 15px;
 }
 
 .publication-contribution strong {
-    color: #30473a;
+    color: #263b2e;
 }
 
 .publication-link {
     display: inline-block;
 
+    margin-top: 4px;
+
     font-size: 11px;
 
     font-weight: 800;
 
-    letter-spacing: 0.05em;
+    letter-spacing: 0.06em;
 
     color: #31563f;
 
     border-bottom: 1px solid #9db3a4;
 
     padding-bottom: 3px;
-
-    transition:
-        color 0.25s ease,
-        border-color 0.25s ease;
 }
 
 .publication-link:hover {
@@ -653,51 +752,24 @@ p {
 
 
 /* =========================================================
-   COLLABORATION GROUPS
+   COLLABORATION SUBSECTIONS
 ========================================================= */
 
-.collaboration-group {
-    margin-top: 90px;
+.collaboration-subsection {
+    margin-top: 100px;
 }
 
-.collaboration-group-heading {
-    max-width: 760px;
-
-    margin-bottom: 38px;
+.light-label {
+    color: #9db6a4 !important;
 }
 
-.collaboration-group-heading > span {
-    display: block;
+.collaboration-subtitle {
+    color: white;
 
-    color: #91a99a;
+    font-size: clamp(30px, 4vw, 45px);
 
-    font-size: 11px;
-
-    font-weight: 800;
-
-    letter-spacing: 0.18em;
-
-    margin-bottom: 12px;
+    margin: 15px 0 40px;
 }
-
-.collaboration-group-heading h3 {
-    color: #ffffff;
-
-    font-size: clamp(28px, 3vw, 40px);
-
-    margin-bottom: 13px;
-}
-
-.collaboration-group-heading p {
-    color: #aebbb3;
-
-    font-size: 15px;
-}
-
-
-/* =========================================================
-   COLLABORATOR CARDS
-========================================================= */
 
 .collaborator-grid {
     display: grid;
@@ -705,344 +777,244 @@ p {
     grid-template-columns:
         repeat(3, 1fr);
 
-    gap: 1px;
-
-    background: #52675a;
-
-    border: 1px solid #52675a;
+    gap: 20px;
 }
 
 .collaborator-card {
-    position: relative;
+    display: grid;
 
-    padding: 38px 30px 40px;
+    grid-template-columns: 58px 1fr;
 
-    min-height: 370px;
+    gap: 20px;
 
-    background: #1d2d25;
+    padding: 30px;
+
+    border: 1px solid #43594b;
+
+    background: #1d2d24;
 
     transition:
-        transform 0.3s ease,
-        background 0.3s ease;
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        background 0.25s ease;
 }
 
 .collaborator-card:hover {
     transform: translateY(-4px);
 
-    background: #22352b;
+    border-color: #718c7a;
+
+    background: #213329;
 }
 
-.collaborator-card-number {
-    color: #789282;
+.collaborator-icon {
+    width: 52px;
+    height: 52px;
 
-    font-size: 11px;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #718879;
+
+    color: #d5e1d8;
+
+    font-size: 12px;
 
     font-weight: 800;
 
-    letter-spacing: 0.15em;
-
-    margin-bottom: 18px;
+    letter-spacing: 0.05em;
 }
 
-.collaborator-type {
-    color: #91aa9b !important;
-
+.collaborator-location {
     font-size: 9px !important;
 
     font-weight: 800;
 
-    letter-spacing: 0.15em;
+    letter-spacing: 0.14em;
 
-    margin-bottom: 14px !important;
+    color: #9db6a4 !important;
+
+    margin-bottom: 7px !important;
 }
 
 .collaborator-card h3 {
-    color: #ffffff;
+    font-size: 22px;
 
-    font-size: 25px;
+    color: white;
 
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 
-.collaborator-institution {
-    color: #aabbb1 !important;
-
-    font-size: 13px !important;
-
-    margin-bottom: 18px !important;
-}
-
-.collaborator-card > p:not(.collaborator-type):not(.collaborator-institution) {
-    color: #b7c4bc;
-
+.collaborator-card p {
     font-size: 14px;
 
-    line-height: 1.7;
+    color: #bac7be;
 
-    margin-bottom: 22px;
+    margin-bottom: 18px;
 }
 
-.collaborator-link,
-.collaborator-paper {
-    display: block;
+.collaborator-links {
+    display: flex;
 
-    width: fit-content;
+    flex-wrap: wrap;
 
-    color: #d3e1d7;
+    gap: 12px;
+}
 
-    font-size: 11px;
+.collaborator-links a {
+    font-size: 10px;
 
     font-weight: 800;
 
-    border-bottom: 1px solid #63796b;
+    color: #c9dacd;
+
+    border-bottom: 1px solid #647b6c;
 
     padding-bottom: 3px;
-
-    margin-top: 9px;
-
-    transition: color 0.25s ease;
 }
 
-.collaborator-link:hover,
-.collaborator-paper:hover {
-    color: #ffffff;
+.collaborator-links a:hover {
+    color: white;
+
+    border-color: white;
 }
 
 
 /* =========================================================
-   STUDENT PROJECTS
+   STUDENT COLLABORATION
 ========================================================= */
 
 .student-collaboration {
-    border-top: 1px solid #40554a;
-
-    padding-top: 70px;
+    padding-top: 10px;
 }
 
-.student-project-grid {
+.student-grid {
     display: grid;
 
     grid-template-columns:
-        repeat(2, minmax(0, 1fr));
+        repeat(2, 1fr);
 
-    gap: 22px;
+    gap: 20px;
 }
 
-.student-project-card {
-    position: relative;
-
-    padding: 40px;
-
-    min-height: 330px;
+.student-card {
+    padding: 35px;
 
     border: 1px solid #52675a;
 
     background:
         linear-gradient(
             145deg,
-            rgba(53, 78, 65, 0.72),
-            rgba(24, 38, 31, 0.95)
+            #1d2d24,
+            #192820
         );
-
-    transition:
-        transform 0.3s ease,
-        border-color 0.3s ease;
 }
 
-.student-project-card:hover {
-    transform: translateY(-5px);
+.student-status {
+    display: inline-block;
 
-    border-color: #81998b;
-}
+    margin-bottom: 18px;
 
-.project-status {
-    display: inline-flex;
+    padding: 6px 10px;
 
-    padding: 7px 11px;
-
-    margin-bottom: 25px;
-
-    border: 1px solid #718879;
-
-    color: #c8d7cc;
+    border: 1px solid #5c7464;
 
     font-size: 9px;
 
-    font-weight: 850;
-
-    letter-spacing: 0.14em;
-}
-
-.student-project-label {
-    color: #91a99a !important;
-
-    font-size: 9px !important;
-
     font-weight: 800;
 
-    letter-spacing: 0.16em;
+    letter-spacing: 0.14em;
 
-    margin-bottom: 10px !important;
+    color: #b6cdbd;
 }
 
-.student-project-card h3 {
+.student-card h3 {
+    font-size: 27px;
+
     color: white;
 
-    font-size: 28px;
+    margin-bottom: 13px;
+}
+
+.student-card p {
+    color: #bdc9c1;
+
+    font-size: 15px;
 
     margin-bottom: 18px;
 }
 
-.student-project-title {
-    color: #e1e9e3 !important;
-
-    font-size: 17px !important;
-
-    line-height: 1.45;
-
-    font-weight: 550;
-
-    margin-bottom: 18px !important;
+.student-card p strong {
+    color: #e0e9e2;
 }
 
-.student-project-description {
-    color: #afbeb4 !important;
-
-    font-size: 14px !important;
-
-    line-height: 1.7;
-
-    margin-bottom: 22px !important;
-}
-
-.student-link {
+.student-coming {
     display: inline-block;
 
-    color: #d3e1d7;
+    margin-bottom: 15px;
+
+    color: #b8cdbd;
 
     font-size: 11px;
 
     font-weight: 800;
 
-    border-bottom: 1px solid #63796b;
+    letter-spacing: 0.08em;
+}
+
+.student-link {
+    display: block;
+
+    width: fit-content;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    color: #d1ded5;
+
+    border-bottom: 1px solid #728879;
 
     padding-bottom: 3px;
 }
 
 .student-link:hover {
     color: white;
+
+    border-color: white;
 }
 
-
-/* =========================================================
-   PHD PLACEHOLDER
-========================================================= */
-
-.student-project-placeholder {
-    min-height: 260px;
-
-    padding: 42px;
-
-    border: 1px dashed #52675a;
-
-    background: rgba(255, 255, 255, 0.025);
-
-    text-align: center;
+.future-card {
+    opacity: 0.9;
 }
 
-.placeholder-stars {
-    color: #9db5a5;
+.collaborator-note {
+    display: flex;
 
-    font-size: 24px;
+    align-items: center;
+    justify-content: center;
 
-    margin-bottom: 17px;
-}
+    gap: 15px;
 
-.student-project-placeholder h3 {
-    color: #ffffff;
+    width: fit-content;
 
-    font-size: 25px;
+    margin: 70px auto 0;
 
-    margin-bottom: 12px;
-}
+    padding: 13px 18px;
 
-.student-project-placeholder p {
-    max-width: 620px;
+    border: 1px solid #566c5d;
 
-    margin: 0 auto 20px;
-
-    color: #aebbb3;
-
-    font-size: 14px;
-}
-
-.coming-soon {
-    display: inline-block;
-
-    color: #8fa798;
-
-    font-size: 9px;
-
-    font-weight: 800;
-
-    letter-spacing: 0.15em;
-}
-
-
-/* =========================================================
-   FUTURE COLLABORATION
-========================================================= */
-
-.future-collaboration {
-    margin-top: 80px;
-
-    padding: 55px 35px;
-
-    text-align: center;
-
-    border-top: 1px solid #52675a;
-
-    border-bottom: 1px solid #52675a;
-}
-
-.future-stars {
-    color: #9db5a5;
-
-    letter-spacing: 8px;
-
-    margin-bottom: 15px;
-}
-
-.future-collaboration h3 {
-    color: white;
-
-    font-size: 30px;
-
-    margin-bottom: 15px;
-}
-
-.future-collaboration p {
-    max-width: 700px;
-
-    margin: 0 auto 22px;
-
-    color: #afbeb5;
-
-    font-size: 15px;
-}
-
-.future-contact-link {
-    display: inline-block;
-
-    color: #d6e2d9;
+    color: #dce6df;
 
     font-size: 11px;
 
-    font-weight: 800;
+    letter-spacing: 0.06em;
+}
 
-    border-bottom: 1px solid #718879;
-
-    padding-bottom: 4px;
+.collaborator-note span {
+    color: #a9c0ae;
 }
 
 
@@ -1233,27 +1205,6 @@ p {
 
 
 /* =========================================================
-   RESPONSIVE — 1100px
-========================================================= */
-
-@media (max-width: 1100px) {
-
-    .navigation {
-        gap: 15px;
-    }
-
-    .navigation a {
-        font-size: 10px;
-    }
-
-    .collaborator-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-}
-
-
-/* =========================================================
    RESPONSIVE — 1000px
 ========================================================= */
 
@@ -1292,6 +1243,11 @@ p {
     .interest-grid {
         grid-template-columns:
             repeat(2, 1fr);
+    }
+
+    .collaborator-grid {
+        grid-template-columns:
+            1fr 1fr;
     }
 
 }
@@ -1335,14 +1291,6 @@ p {
         padding: 45px 0;
     }
 
-    .publication-item {
-        padding-right: 0;
-    }
-
-    .publication-item h3 {
-        font-size: 20px;
-    }
-
     .timeline-item {
         grid-template-columns: 1fr;
 
@@ -1363,8 +1311,26 @@ p {
         grid-template-columns: 1fr;
     }
 
-    .student-project-grid {
+    .student-grid {
         grid-template-columns: 1fr;
+    }
+
+    .publication-year {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+        padding: 45px 0;
+    }
+
+    .year-label {
+        font-size: 27px;
+    }
+
+    .objective-item {
+        grid-template-columns: 55px 1fr;
+
+        gap: 15px;
     }
 
 }
@@ -1416,22 +1382,38 @@ p {
         max-height: 450px;
     }
 
-    .publication-item {
-        padding-top: 30px;
-        padding-bottom: 32px;
+    .research-objectives {
+        margin-top: 50px;
+        padding-top: 40px;
     }
 
-    .publication-item h3 {
+    .objectives-heading h3 {
+        font-size: 24px;
+    }
+
+    .objective-item {
+        grid-template-columns: 1fr;
+
+        gap: 8px;
+
+        padding: 25px 0;
+    }
+
+    .objective-number {
+        padding-top: 0;
+    }
+
+    .objective-content h3 {
         font-size: 19px;
     }
 
-    .publication-authors,
-    .publication-journal {
-        font-size: 13px;
+    .publication-item h3 {
+        font-size: 20px;
     }
 
-    .year-heading {
-        font-size: 50px;
+    .publication-authors,
+    .publication-contribution {
+        font-size: 13px;
     }
 
     .collaborator-box {
@@ -1440,33 +1422,29 @@ p {
 
     .collaborator-stars {
         font-size: 16px;
+
         letter-spacing: 7px;
     }
 
-    .student-project-card {
-        padding: 30px 24px;
-    }
+    .collaborator-card {
+        grid-template-columns: 1fr;
 
-    .student-project-card h3 {
-        font-size: 25px;
-    }
-
-    .student-project-title {
-        font-size: 16px !important;
+        gap: 15px;
     }
 
     .collaborator-note {
         flex-direction: column;
-        gap: 7px;
-        width: 100%;
-    }
 
-    .future-collaboration {
-        padding: 45px 20px;
+        gap: 7px;
+
+        width: 100%;
+
+        text-align: center;
     }
 
     .footer-container {
         flex-direction: column;
+
         align-items: flex-start;
     }
 
