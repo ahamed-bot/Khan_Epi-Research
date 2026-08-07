@@ -1468,3 +1468,31 @@ p {
     color: #30463a;
 
 }
+/* =========================================================
+   RESEARCH OVERVIEW IMAGE
+========================================================= */
+
+.research-overview-image {
+
+    margin: 55px 0 70px;
+
+    border: 1px solid #d6ddd7;
+
+    background: #f3f5f1;
+
+    overflow: hidden;
+
+}
+
+
+.research-overview-image img {
+
+    width: 100%;
+
+    max-height: 650px;
+
+    object-fit: contain;
+
+    display: block;
+
+}
